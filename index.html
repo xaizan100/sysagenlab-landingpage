@@ -1,116 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- Primary Meta Tags -->
+    <title>SysAgen Lab - AI Growth Agency | Scale with Intelligent Automation</title>
+    <meta name="title" content="SysAgen Lab - AI Growth Agency | Scale with Intelligent Automation">
+    <meta name="description" content="Stop chasing leads. SysAgen Lab builds AI-driven systems that generate high-converting leads and scale your revenue automatically.">
+    <meta name="keywords" content="AI Agency, Software Automation, Lead Generation AI, Business Growth, SysAgen">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sysagenlab.ai/">
+    <meta property="og:title" content="SysAgen Lab - AI Growth Agency">
+    <meta property="og:description" content="Scale your business with intelligent automation. Join 50+ growing businesses using SysAgen Lab.">
+    <meta property="og:image" content="https://picsum.photos/1200/630?grayscale">
 
-  <!-- Primary Meta Tags -->
-  <title>SysAgen Lab - AI Growth Agency | Scale with Intelligent Automation</title>
-  <meta name="title" content="SysAgen Lab - AI Growth Agency | Scale with Intelligent Automation">
-  <meta name="description"
-    content="Stop chasing leads. SysAgen Lab builds AI-driven systems that generate high-converting leads and scale your revenue automatically.">
-  <meta name="keywords" content="AI Agency, Software Automation, Lead Generation AI, Business Growth, SysAgen">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sysagenlab.ai/">
+    <meta property="twitter:title" content="SysAgen Lab - AI Growth Agency">
+    <meta property="twitter:description" content="Scale your business with intelligent automation. Get a Free AI Audit today.">
+    <meta property="twitter:image" content="https://picsum.photos/1200/630?grayscale">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sysagenlab.co.uk/">
-  <meta property="og:title" content="SysAgen Lab - AI Growth Agency">
-  <meta property="og:description"
-    content="Scale your business with intelligent automation. Join 50+ growing businesses using SysAgen Lab.">
-  <meta property="og:image" content="https://picsum.photos/1200/630?grayscale">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://sysagenlab.co.uk/">
-  <meta property="twitter:title" content="SysAgen Lab - AI Growth Agency">
-  <meta property="twitter:description"
-    content="Scale your business with intelligent automation. Get a Free AI Audit today.">
-  <meta property="twitter:image" content="https://picsum.photos/1200/630?grayscale">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap"
-    rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0a0a0a;
-      color: #f0f0f0;
-      margin: 0;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-      position: relative;
-      min-height: 100vh;
-    }
-
-    .font-serif {
-      font-family: 'Instrument Serif', serif;
-    }
-
-    .bg-glow {
-      background: radial-gradient(circle at 50% -20%, #222 0%, #0a0a0a 70%);
-    }
-
-    .border-gradient-shadow {
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 10px 16px rgba(0, 0, 0, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    /* Mobile Safari Glassmorphism Compatibility */
-    .backdrop-blur-md {
-      -webkit-backdrop-filter: blur(12px);
-      backdrop-filter: blur(12px);
-    }
-
-    .backdrop-blur-xl {
-      -webkit-backdrop-filter: blur(24px);
-      backdrop-filter: blur(24px);
-    }
-
-    .animate-float {
-      animation: float 6s ease-in-out infinite;
-    }
-
-    @keyframes float {
-
-      0%,
-      100% {
-        transform: translateY(0px);
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0a0a0a;
+        color: #f0f0f0;
+        margin: 0;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        position: relative;
+        min-height: 100vh;
+      }
+      .font-serif {
+        font-family: 'Instrument Serif', serif;
+      }
+      .bg-glow {
+        background: radial-gradient(circle at 50% -20%, #222 0%, #0a0a0a 70%);
+      }
+      .border-gradient-shadow {
+        box-shadow: 0 0 0 1px rgba(255,255,255,0.05), 0 10px 16px rgba(0,0,0,0.4);
+        border: 1px solid rgba(255,255,255,0.1);
+      }
+      
+      /* Mobile Safari Glassmorphism Compatibility */
+      .backdrop-blur-md {
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+      }
+      .backdrop-blur-xl {
+        -webkit-backdrop-filter: blur(24px);
+        backdrop-filter: blur(24px);
       }
 
-      50% {
-        transform: translateY(-10px);
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
       }
-    }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #222;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #333;
+      }
 
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #0a0a0a;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #222;
-      border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: #333;
-    }
-
-    /* Initial background to prevent flicker */
-    #root:empty {
-      background: #0a0a0a;
-      min-height: 100vh;
-    }
-  </style>
-  <script type="importmap">
+      /* Initial background to prevent flicker */
+      #root:empty {
+        background: #0a0a0a;
+        min-height: 100vh;
+      }
+    </style>
+    <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@19.0.0",
@@ -121,17 +101,15 @@
   }
 }
 </script>
-</head>
-
-<body>
-  <div id="root"></div>
-  <!-- Entry point -->
-  <script type="module" src="index.tsx"></script>
-  <noscript>
-    <div style="padding: 20px; text-align: center; color: white;">
-      Please enable JavaScript to view this application.
-    </div>
-  </noscript>
-</body>
-
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Entry point -->
+    <script type="module" src="index.tsx"></script>
+    <noscript>
+      <div style="padding: 20px; text-align: center; color: white;">
+        Please enable JavaScript to view this application.
+      </div>
+    </noscript>
+  </body>
 </html>
