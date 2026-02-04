@@ -18,8 +18,10 @@
     <style>
       /* CRITICAL INITIAL STYLES */
       :root {
+        --brand-blue: #0082ff;
         --brand-purple: #8b5cf6;
-        --brand-pink: #ec4899;
+        --brand-dark-purple: #6d28d9;
+        --brand-purple-light: #c4b5fd;
       }
       
       body {
@@ -59,36 +61,23 @@
         text-align: center;
       }
 
-      /* Animated SVG Logo */
+      /* Animated SVG Logo - Reconstructed Isometric Compact S */
       .logo-svg {
-        width: 120px;
-        height: 120px;
-        filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.4));
-        animation: logo-pulse 2s ease-in-out infinite;
-      }
-
-      .logo-rect {
-        fill: url(#logo-grad);
-        rx: 24;
-      }
-
-      .logo-text {
-        fill: white;
-        font-family: 'Inter', sans-serif;
-        font-weight: 900;
-        font-size: 56px;
-        text-anchor: middle;
-        dominant-baseline: middle;
+        width: 180px;
+        height: 200px;
+        filter: drop-shadow(0 0 50px rgba(139, 92, 246, 0.4));
+        animation: logo-pulse 2.5s ease-in-out infinite;
       }
 
       /* Text and Shimmer */
       .brand-text {
         margin-top: 32px;
         font-family: 'Inter', sans-serif;
-        font-size: 28px;
-        font-weight: 800;
+        font-size: 48px;
+        font-weight: 900;
         letter-spacing: -0.05em;
         color: white;
+        text-transform: uppercase;
         animation: fade-in-up 0.8s ease-out forwards;
       }
 
@@ -97,11 +86,11 @@
       }
 
       .progress-bar {
-        width: 200px;
-        height: 4px;
+        width: 300px;
+        height: 2px;
         background: rgba(255, 255, 255, 0.05);
         border-radius: 10px;
-        margin-top: 24px;
+        margin-top: 40px;
         overflow: hidden;
         position: relative;
       }
@@ -117,7 +106,7 @@
       /* Animations */
       @keyframes logo-pulse {
         0%, 100% { transform: scale(1); opacity: 0.9; }
-        50% { transform: scale(1.08); opacity: 1; }
+        50% { transform: scale(1.05) translateY(-5px); opacity: 1; }
       }
 
       @keyframes progress-move {
@@ -126,13 +115,13 @@
       }
 
       @keyframes fade-in-up {
-        from { opacity: 0; transform: translateY(10px); }
+        from { opacity: 0; transform: translateY(15px); }
         to { opacity: 1; transform: translateY(0); }
       }
     </style>
 
     <!-- Async Fonts and Tailwind -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script type="importmap">
@@ -150,15 +139,30 @@
   <body>
     <div id="root">
       <div class="loader-content">
-        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Reconstructed Compact 3D Isometric S-mark for Loader -->
+        <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#glow)">
+            <symbol id="loader-cube" viewBox="0 0 30 24">
+              <path d="M0 8L15 0L30 8L15 16L0 8Z" fill="#d8b4fe"/> <!-- Top -->
+              <path d="M0 8V24L15 32V16L0 8Z" fill="#6d28d9"/> <!-- Left -->
+              <path d="M15 16V32L30 24V8L15 16Z" fill="#8b5cf6"/> <!-- Right -->
+              <path d="M0 8L15 16L30 8M15 16V32" stroke="rgba(0,0,0,0.15)" stroke-width="0.5" />
+            </symbol>
+
+            {/* Formation: TR, TL, ML, MR, BR, BL */}
+            <use href="#loader-cube" x="50" y="10" width="30" height="32" />
+            <use href="#loader-cube" x="35" y="18" width="30" height="32" />
+            <use href="#loader-cube" x="35" y="34" width="30" height="32" />
+            <use href="#loader-cube" x="50" y="42" width="30" height="32" />
+            <use href="#loader-cube" x="50" y="58" width="30" height="32" />
+            <use href="#loader-cube" x="35" y="66" width="30" height="32" />
+          </g>
           <defs>
-            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
-            </linearGradient>
+            <filter id="glow" x="-20" y="-20" width="140" height="140" filterUnits="userSpaceOnUse">
+              <feGaussianBlur stdDeviation="6" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
           </defs>
-          <rect class="logo-rect" x="10" y="10" width="80" height="80" />
-          <text x="50" y="54" class="logo-text">S</text>
         </svg>
         <div class="brand-text">SYSAGEN<span>LAB</span></div>
         <div class="progress-bar">

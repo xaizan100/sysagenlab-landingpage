@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import Logo from './Logo';
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,14 +23,9 @@ const Navbar: React.FC = () => {
         flex flex-col md:flex-row items-stretch md:items-center justify-between
       `}>
         <div className="flex items-center justify-between w-full md:w-auto">
-          <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-            <div className="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center">
-              <span className="text-white font-black text-xl">S</span>
-            </div>
-            <span className="text-xl font-extrabold tracking-tighter text-white">
-              SYSAGEN<span className="text-purple-500 ml-0.5">LAB</span>
-            </span>
-          </div>
+          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }} className="block transform transition-transform hover:scale-105 active:scale-95">
+            <Logo className="scale-[0.65] md:scale-[0.75] origin-left" />
+          </a>
 
           <button 
             onClick={toggleMenu}
@@ -49,12 +45,12 @@ const Navbar: React.FC = () => {
           ${mobileMenuOpen ? 'flex flex-col mt-4 pb-4 animate-fade-in' : 'hidden'} 
           md:flex md:flex-row md:items-center md:mt-0 md:pb-0 gap-8
         `}>
-          <a href="#features" onClick={closeMenu} className="text-sm font-semibold text-gray-400 hover:text-white transition-colors">Solutions</a>
-          <a href="#testimonials" onClick={closeMenu} className="text-sm font-semibold text-gray-400 hover:text-white transition-colors">Case Studies</a>
+          <a href="#features" onClick={closeMenu} className="text-sm font-bold text-gray-400 hover:text-white transition-colors">Solutions</a>
+          <a href="#testimonials" onClick={closeMenu} className="text-sm font-bold text-gray-400 hover:text-white transition-colors">Case Studies</a>
           <a 
             href="#contact" 
             onClick={closeMenu}
-            className="bg-purple-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-purple-500 transition-all text-center"
+            className="bg-purple-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-purple-500 transition-all text-center shadow-[0_0_20px_rgba(139,92,246,0.3)]"
           >
             Discovery Call
           </a>
