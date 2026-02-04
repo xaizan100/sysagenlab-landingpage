@@ -17,9 +17,10 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
-    // Small delay to ensure browser has painted the splash screen correctly 
-    // before swapping to the React tree.
-    const timer = setTimeout(() => setMounted(true), 100);
+    // Small delay to ensure browser has painted the loader correctly before swapping
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 150);
     
     if (toast) {
       const toastTimer = setTimeout(() => setToast(null), 3000);
@@ -36,11 +37,13 @@ const App: React.FC = () => {
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-900/10 blur-[120px] rounded-full"></div>
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col">
         <Navbar />
         
-        <main>
-          <Hero />
+        <main className="flex-grow">
+          <div id="hero">
+            <Hero />
+          </div>
           <SocialProof />
           <div id="features" className="scroll-mt-32">
             <ValuePropSection />
