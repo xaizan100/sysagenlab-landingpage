@@ -28,9 +28,10 @@
         background-color: #0a0a0a;
         height: 100%;
         width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
       }
 
+      /* Fixed centered container for the loader */
       #root:empty {
         display: flex;
         flex-direction: column;
@@ -39,83 +40,91 @@
         position: fixed;
         inset: 0;
         background: #0a0a0a;
-        z-index: 9999;
+        z-index: 99999;
       }
 
-      /* Logo Animation */
-      .loader-container {
+      .loader-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-      }
-
-      .logo-box {
-        width: 64px;
-        height: 64px;
-        background: linear-gradient(135deg, var(--brand-purple), var(--brand-pink));
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
-        animation: pulse-scale 2s ease-in-out infinite;
+        text-align: center;
       }
 
-      .logo-box span {
-        color: white;
-        font-family: sans-serif;
+      /* Animated SVG Logo */
+      .logo-svg {
+        width: 100px;
+        height: 100px;
+        filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.4));
+        animation: logo-pulse 2s ease-in-out infinite;
+      }
+
+      .logo-rect {
+        fill: url(#logo-grad);
+        rx: 20;
+      }
+
+      .logo-text {
+        fill: white;
+        font-family: Arial, sans-serif;
         font-weight: 900;
-        font-size: 32px;
+        font-size: 48px;
+        text-anchor: middle;
+        dominant-baseline: middle;
       }
 
-      .loader-text {
-        font-family: 'Inter', -apple-system, sans-serif;
+      /* Professional Text Animation */
+      .brand-text {
+        margin-top: 24px;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 24px;
         font-weight: 800;
         letter-spacing: -0.05em;
-        font-size: 18px;
         color: white;
-        opacity: 0;
-        animation: fade-in-up 0.5s ease-out forwards 0.2s;
+        position: relative;
+        overflow: hidden;
       }
 
-      .loader-text span {
+      .brand-text span {
         color: var(--brand-purple);
       }
 
-      .loading-bar-wrap {
-        width: 120px;
-        height: 2px;
-        background: rgba(255,255,255,0.05);
-        border-radius: 2px;
+      /* Shimmering bar */
+      .progress-bar {
+        width: 160px;
+        height: 3px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        margin-top: 20px;
         overflow: hidden;
-        margin-top: 10px;
+        position: relative;
       }
 
-      .loading-bar-inner {
-        width: 40%;
+      .progress-fill {
+        position: absolute;
         height: 100%;
-        background: var(--brand-purple);
-        animation: progress 1.5s ease-in-out infinite;
+        width: 40%;
+        background: linear-gradient(90deg, transparent, var(--brand-purple), transparent);
+        animation: progress-move 1.5s ease-in-out infinite;
       }
 
-      @keyframes pulse-scale {
-        0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
-        50% { transform: scale(1.05); box-shadow: 0 0 40px rgba(139, 92, 246, 0.5); }
+      /* Animations */
+      @keyframes logo-pulse {
+        0%, 100% { transform: scale(1); opacity: 0.9; }
+        50% { transform: scale(1.1); opacity: 1; }
       }
 
-      @keyframes fade-in-up {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-
-      @keyframes progress {
+      @keyframes progress-move {
         0% { transform: translateX(-100%); }
         100% { transform: translateX(250%); }
       }
 
-      /* Tailwind placeholder to prevent FOIT */
-      .font-inter { font-family: 'Inter', sans-serif; }
+      /* Ensure content is visible immediately once React starts */
+      #root:not(:empty) {
+        height: auto;
+        position: static;
+        background: transparent;
+      }
     </style>
 
     <!-- Async Fonts and Tailwind -->
@@ -128,21 +137,28 @@
     "react": "https://esm.sh/react@19.0.0",
     "react-dom": "https://esm.sh/react-dom@19.0.0",
     "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
   }
 }
 </script>
   </head>
   <body>
     <div id="root">
-      <div class="loader-container">
-        <div class="logo-box">
-          <span>S</span>
-        </div>
-        <div class="loader-text">SYSAGEN<span>LAB</span></div>
-        <div class="loading-bar-wrap">
-          <div class="loading-bar-inner"></div>
+      <div class="loader-content">
+        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect class="logo-rect" x="10" y="10" width="80" height="80" />
+          <text x="50" y="54" class="logo-text">S</text>
+        </svg>
+        <div class="brand-text">SYSAGEN<span>LAB</span></div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
         </div>
       </div>
     </div>

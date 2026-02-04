@@ -17,15 +17,19 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
-    setMounted(true);
+    // Small delay to ensure browser has painted the splash screen correctly 
+    // before swapping to the React tree.
+    const timer = setTimeout(() => setMounted(true), 100);
+    
     if (toast) {
-      const timer = setTimeout(() => setToast(null), 3000);
-      return () => clearTimeout(timer);
+      const toastTimer = setTimeout(() => setToast(null), 3000);
+      return () => clearTimeout(toastTimer);
     }
+    return () => clearTimeout(timer);
   }, [toast]);
 
   return (
-    <div className={`relative min-h-screen bg-[#0a0a0a] selection:bg-purple-500 selection:text-white transition-opacity duration-700 ${mounted ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`relative min-h-screen bg-[#0a0a0a] selection:bg-purple-500 selection:text-white transition-opacity duration-1000 ease-out ${mounted ? 'opacity-100' : 'opacity-0'}`}>
       {/* Background Gradients */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-purple-900/10 blur-[120px] rounded-full"></div>
