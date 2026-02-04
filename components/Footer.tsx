@@ -25,18 +25,21 @@ const Footer: React.FC<FooterProps> = ({ onPlaceholderClick }) => {
               </span>
             </div>
             <p className="text-gray-500 max-w-md text-lg leading-relaxed">
-              We engineer high-performance AI systems that turn operations into revenue. Join the automated revolution.
+              We engineer high-performance AI systems that turn manual operations into autonomous revenue engines.
             </p>
-            <div className="mt-8 flex gap-4">
-              <div className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-400">
-                Operating in <span className="text-white font-bold">San Francisco, CA</span>
+            <div className="mt-8 flex flex-col gap-3">
+              <div className="px-4 py-2 w-fit rounded-lg bg-white/5 border border-white/10 text-xs text-gray-400">
+                Support: <a href="mailto:Hello@sysagenlab.co.uk" className="text-white font-bold">Hello@sysagenlab.co.uk</a>
+              </div>
+              <div className="px-4 py-2 w-fit rounded-lg bg-white/5 border border-white/10 text-xs text-gray-400">
+                Region: <span className="text-white font-bold">United Kingdom / Global</span>
               </div>
             </div>
           </div>
           
           <div>
             <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-[0.2em]">Ecosystem</h4>
-            <ul className="space-y-4 text-gray-500 font-medium">
+            <ul className="space-y-4 text-gray-500 font-medium text-sm">
               <li><a href="#features" className="hover:text-purple-400 transition-colors">AI Solutions</a></li>
               <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Partner Portal')} className="hover:text-purple-400 transition-colors">Partner Portal</a></li>
               <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Developer API')} className="hover:text-purple-400 transition-colors">Developer API</a></li>
@@ -45,18 +48,18 @@ const Footer: React.FC<FooterProps> = ({ onPlaceholderClick }) => {
 
           <div>
             <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-[0.2em]">Company</h4>
-            <ul className="space-y-4 text-gray-500 font-medium">
+            <ul className="space-y-4 text-gray-500 font-medium text-sm">
               <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Success Stories')} className="hover:text-purple-400 transition-colors">Success Stories</a></li>
-              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Privacy')} className="hover:text-purple-400 transition-colors">Privacy</a></li>
-              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Terms')} className="hover:text-purple-400 transition-colors">Terms</a></li>
+              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Privacy Policy')} className="hover:text-purple-400 transition-colors">Privacy</a></li>
+              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Terms of Service')} className="hover:text-purple-400 transition-colors">Terms</a></li>
             </ul>
           </div>
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-8">
           <p className="text-xs text-gray-600 font-medium text-center sm:text-left tracking-wide">
-            © 2025 SysAgen Lab Inc. All systems go. <br className="sm:hidden" />
-            Designed for <span className="text-purple-500">infinite scalability</span>.
+            © 2025 SysAgen Lab Ltd. All systems go. <br className="sm:hidden" />
+            Empowering agencies with <span className="text-purple-500">intelligent infrastructure</span>.
           </p>
           <div className="flex gap-8 text-gray-500">
             <a href="#" onClick={(e) => handlePlaceholder(e, 'X')} className="hover:text-white transition-all transform hover:scale-110">
