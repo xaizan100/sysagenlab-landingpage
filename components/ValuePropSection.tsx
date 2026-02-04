@@ -112,7 +112,7 @@ const ValuePropSection: React.FC = () => {
             <div className="text-5xl font-black text-white mb-2">80%</div>
             <div className="text-xs text-purple-400 font-bold uppercase tracking-widest mb-6">Reduction in Operating Costs</div>
             <a href="#contact" className="w-full bg-purple-600 text-white py-4 rounded-xl font-bold hover:bg-purple-500 transition-all">
-              Schedule Free Audit
+              Book Discovery Call
             </a>
           </div>
         </div>

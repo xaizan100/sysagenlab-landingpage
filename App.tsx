@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import SocialProof from './components/SocialProof';
 import ValuePropSection from './components/ValuePropSection';
 import Testimonials from './components/Testimonials';
-import ContactForm from './components/ContactForm';
+import BookingSection from './components/BookingSection';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -17,7 +17,6 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
-    // Small delay to ensure browser has painted the loader correctly before swapping
     const timer = setTimeout(() => {
       setMounted(true);
     }, 150);
@@ -31,7 +30,6 @@ const App: React.FC = () => {
 
   return (
     <div className={`relative min-h-screen bg-[#0a0a0a] selection:bg-purple-500 selection:text-white transition-opacity duration-1000 ease-out ${mounted ? 'opacity-100' : 'opacity-0'}`}>
-      {/* Background Gradients */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-purple-900/10 blur-[120px] rounded-full"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-900/10 blur-[120px] rounded-full"></div>
@@ -52,14 +50,13 @@ const App: React.FC = () => {
             <Testimonials />
           </div>
           <div id="contact" className="scroll-mt-32">
-            <ContactForm />
+            <BookingSection />
           </div>
         </main>
 
         <Footer onPlaceholderClick={showToast} />
       </div>
 
-      {/* Global Toast Notification */}
       {toast && (
         <div className="fixed bottom-8 right-8 z-[100] animate-fade-in">
           <div className="bg-black/90 backdrop-blur-2xl border border-white/10 px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4">

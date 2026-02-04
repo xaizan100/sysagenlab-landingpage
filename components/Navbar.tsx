@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
             className="bg-purple-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-purple-500 transition-all text-center"
           >
-            Book Audit
+            Discovery Call
           </a>
         </div>
       </nav>

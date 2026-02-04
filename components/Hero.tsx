@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
             href="#contact" 
             className="w-full sm:w-auto bg-white text-black px-10 py-5 rounded-2xl font-black text-lg hover:bg-purple-500 hover:text-white transition-all hover:scale-105 active:scale-95"
           >
-            Book A 15-Minute Audit
+            Book A 30-Minute Discovery Call
           </a>
           <div className="flex items-center gap-4 text-left">
             <div className="text-xs text-gray-500 font-bold uppercase tracking-tight">
