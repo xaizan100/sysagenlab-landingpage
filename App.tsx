@@ -10,12 +10,14 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   const [toast, setToast] = useState<string | null>(null);
+  const [mounted, setMounted] = useState(false);
 
   const showToast = (message: string) => {
     setToast(message);
   };
 
   useEffect(() => {
+    setMounted(true);
     if (toast) {
       const timer = setTimeout(() => setToast(null), 3000);
       return () => clearTimeout(timer);
@@ -23,8 +25,8 @@ const App: React.FC = () => {
   }, [toast]);
 
   return (
-    <div className="relative min-h-screen bg-[#0a0a0a] selection:bg-purple-500 selection:text-white">
-      {/* Background Gradients - Reverted to Original Purple/Indigo */}
+    <div className={`relative min-h-screen bg-[#0a0a0a] selection:bg-purple-500 selection:text-white transition-opacity duration-700 ${mounted ? 'opacity-100' : 'opacity-0'}`}>
+      {/* Background Gradients */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-purple-900/10 blur-[120px] rounded-full"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-900/10 blur-[120px] rounded-full"></div>

@@ -9,83 +9,119 @@
     <title>SysAgen Lab - AI Growth Agency | Scale with Intelligent Automation</title>
     <meta name="title" content="SysAgen Lab - AI Growth Agency | Scale with Intelligent Automation">
     <meta name="description" content="Stop chasing leads. SysAgen Lab builds AI-driven systems that generate high-converting leads and scale your revenue automatically.">
-    <meta name="keywords" content="AI Agency, Software Automation, Lead Generation AI, Business Growth, SysAgen">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sysagenlab.ai/">
-    <meta property="og:title" content="SysAgen Lab - AI Growth Agency">
-    <meta property="og:description" content="Scale your business with intelligent automation. Join 50+ growing businesses using SysAgen Lab.">
-    <meta property="og:image" content="https://picsum.photos/1200/630?grayscale">
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
     <style>
+      /* CRITICAL INITIAL STYLES - Loads in milliseconds */
       :root {
         --brand-purple: #8b5cf6;
+        --brand-pink: #ec4899;
       }
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #0a0a0a;
-        color: #f0f0f0;
+      
+      body, html {
         margin: 0;
+        padding: 0;
+        background-color: #0a0a0a;
+        height: 100%;
+        width: 100%;
         overflow-x: hidden;
-        scroll-behavior: smooth;
       }
-      .font-serif {
-        font-family: 'Instrument Serif', serif;
-      }
-      
-      /* Mobile Performance Styles */
-      @keyframes spin { 100% { transform: rotate(360deg); } }
-      @keyframes pulse-bg { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
-      
+
       #root:empty {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        position: fixed;
+        inset: 0;
         background: #0a0a0a;
+        z-index: 9999;
       }
 
-      #root:empty::after {
-        content: "";
-        width: 32px;
-        height: 32px;
-        border: 2px solid rgba(255,255,255,0.05);
-        border-top-color: var(--brand-purple);
-        border-radius: 50%;
-        animation: spin 0.8s linear infinite;
-        margin-top: 20px;
+      /* Logo Animation */
+      .loader-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
       }
 
-      .splash-logo {
+      .logo-box {
+        width: 64px;
+        height: 64px;
+        background: linear-gradient(135deg, var(--brand-purple), var(--brand-pink));
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+        animation: pulse-scale 2s ease-in-out infinite;
+      }
+
+      .logo-box span {
+        color: white;
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 32px;
+      }
+
+      .loader-text {
+        font-family: 'Inter', -apple-system, sans-serif;
         font-weight: 800;
         letter-spacing: -0.05em;
-        font-size: 24px;
+        font-size: 18px;
         color: white;
-        animation: pulse-bg 2s ease-in-out infinite;
+        opacity: 0;
+        animation: fade-in-up 0.5s ease-out forwards 0.2s;
       }
 
-      .border-gradient-shadow {
-        box-shadow: 0 0 0 1px rgba(255,255,255,0.05), 0 10px 16px rgba(0,0,0,0.4);
-        border: 1px solid rgba(255,255,255,0.1);
-      }
-      
-      .backdrop-blur-xl {
-        -webkit-backdrop-filter: blur(24px);
-        backdrop-filter: blur(24px);
+      .loader-text span {
+        color: var(--brand-purple);
       }
 
-      @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
+      .loading-bar-wrap {
+        width: 120px;
+        height: 2px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 2px;
+        overflow: hidden;
+        margin-top: 10px;
       }
-      .animate-float { animation: float 6s ease-in-out infinite; }
+
+      .loading-bar-inner {
+        width: 40%;
+        height: 100%;
+        background: var(--brand-purple);
+        animation: progress 1.5s ease-in-out infinite;
+      }
+
+      @keyframes pulse-scale {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+        50% { transform: scale(1.05); box-shadow: 0 0 40px rgba(139, 92, 246, 0.5); }
+      }
+
+      @keyframes fade-in-up {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes progress {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(250%); }
+      }
+
+      /* Tailwind placeholder to prevent FOIT */
+      .font-inter { font-family: 'Inter', sans-serif; }
     </style>
+
+    <!-- Async Fonts and Tailwind -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <script type="importmap">
 {
   "imports": {
@@ -100,7 +136,15 @@
   </head>
   <body>
     <div id="root">
-      <div class="splash-logo">SYSAGEN<span style="color: #8b5cf6;">LAB</span></div>
+      <div class="loader-container">
+        <div class="logo-box">
+          <span>S</span>
+        </div>
+        <div class="loader-text">SYSAGEN<span>LAB</span></div>
+        <div class="loading-bar-wrap">
+          <div class="loading-bar-inner"></div>
+        </div>
+      </div>
     </div>
     <script type="module" src="index.tsx"></script>
   </body>
