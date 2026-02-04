@@ -20,8 +20,7 @@ const ContactForm: React.FC = () => {
     setStatus('loading');
 
     try {
-      // Using FormSubmit.co for direct email delivery to Google Workspace
-      // No backend required. Features: Spam protection, file uploads, and auto-responders.
+      // Direct integration with your Google Workspace email via FormSubmit
       const response = await fetch("https://formsubmit.co/ajax/Hello@sysagenlab.co.uk", {
         method: "POST",
         headers: { 
@@ -31,10 +30,11 @@ const ContactForm: React.FC = () => {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          goal: formData.type,
-          bottleneck: formData.message,
-          _subject: `New AI Audit Request from ${formData.name}`,
-          _template: 'table' // Sends a clean table-formatted email
+          requested_goal: formData.type,
+          bottleneck_description: formData.message,
+          _subject: `New AI Audit Request: ${formData.name}`,
+          _template: 'table',
+          _captcha: 'false' // Note: First submission will still require you to click an activation link in your email
         })
       });
 
@@ -82,12 +82,11 @@ const ContactForm: React.FC = () => {
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
               </div>
               <h3 className="text-3xl font-bold text-white mb-3 tracking-tighter">Request Received</h3>
-              <p className="text-gray-400 font-medium">An automation engineer will contact you at <span className="text-white">Hello@sysagenlab.co.uk</span> within 4 business hours to book your audit.</p>
+              <p className="text-gray-400 font-medium px-4">An automation engineer will review your details and contact you within 4 business hours to book your audit.</p>
               <button onClick={() => setStatus('idle')} className="mt-8 text-purple-500 text-sm font-bold hover:text-purple-400">Submit another request</button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
-              {/* Anti-spam honeypot */}
               <input type="text" name="_honey" style={{ display: 'none' }} />
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -131,7 +130,7 @@ const ContactForm: React.FC = () => {
               </div>
 
               {status === 'error' && (
-                <p className="text-red-500 text-xs font-bold text-center">Something went wrong. Please try again or email us directly.</p>
+                <p className="text-red-500 text-xs font-bold text-center">Something went wrong. Please check your connection or email us directly.</p>
               )}
 
               <button 

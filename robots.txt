@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sysagenlab.ai/sitemap.xml
+Sitemap: https://sysagenlab.co.uk/sitemap.xml
