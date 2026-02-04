@@ -4,8 +4,8 @@ import { ValueProp } from '../types';
 
 const features: ValueProp[] = [
   {
-    title: "AI-Driven Lead Generation",
-    description: "Our proprietary AI agents identify and engage prospects across multiple platforms 24/7, booking meetings directly into your calendar.",
+    title: "AI-Powered SDR Engines",
+    description: "Our proprietary systems identify and engage prospects across multiple platforms 24/7, booking qualified meetings directly into your stack.",
     type: 'positive',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -14,8 +14,8 @@ const features: ValueProp[] = [
     )
   },
   {
-    title: "Automated Fulfillment",
-    description: "Eliminate bottleneck workflows. We implement AI that handles content creation, data entry, and basic customer success automatically.",
+    title: "Architectural Automation",
+    description: "Eliminate repetitive bottleneck workflows. We implement AI infrastructure that handles content, data, and client success automatically.",
     type: 'positive',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -24,8 +24,8 @@ const features: ValueProp[] = [
     )
   },
   {
-    title: "Insight Analysis",
-    description: "Deep-dive AI audits into your current funnel. We spot the leaking points and fix them with predictive modeling.",
+    title: "Predictive Intelligence",
+    description: "Deep-dive AI audits into your current funnel. We spot leakage and repair it using advanced predictive modeling and neural insights.",
     type: 'positive',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,25 +39,25 @@ const ValuePropSection: React.FC = () => {
   return (
     <section className="py-24 px-4 max-w-6xl mx-auto">
       <div className="text-center mb-16">
-        <div className="inline-block bg-purple-500/20 text-purple-400 font-bold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider mb-4">
+        <div className="inline-block bg-purple-500/10 text-purple-400 font-black px-5 py-2 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 border border-purple-500/20">
           The Solution
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-          Everything you need to <br className="hidden md:block" /> scale at the speed of light.
+        <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter">
+          Engineering the <br className="hidden md:block" /> absolute speed of growth.
         </h2>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          We don't just give you tools. We build the entire infrastructure required to turn your agency or SaaS into an automated powerhouse.
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto font-medium">
+          SysAgen Lab goes beyond tools. We build the core infrastructure that converts manual operations into a scalable, automated powerhouse.
         </p>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">
         {features.map((feature, idx) => (
-          <div key={idx} className="bg-[#111] border-gradient-shadow p-8 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
-            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-purple-500 mb-6 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+          <div key={idx} className="bg-[#0f0f0f] border border-white/5 p-8 rounded-[2rem] group hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-2">
+            <div className="w-14 h-14 rounded-2xl bg-purple-500/5 flex items-center justify-center text-purple-500 mb-6 group-hover:bg-purple-600 group-hover:text-white transition-all duration-500 shadow-inner">
               {feature.icon}
             </div>
-            <h3 className="text-xl font-bold text-white mb-4">{feature.title}</h3>
-            <p className="text-gray-400 leading-relaxed text-sm">
+            <h3 className="text-xl font-bold text-white mb-4 tracking-tight">{feature.title}</h3>
+            <p className="text-gray-500 leading-relaxed text-sm font-medium">
               {feature.description}
             </p>
           </div>
@@ -65,43 +65,44 @@ const ValuePropSection: React.FC = () => {
       </div>
 
       {/* Comparison Style Visual */}
-      <div className="mt-20 bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-[2.5rem] p-8 md:p-12 border border-white/5 relative overflow-hidden">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="mt-24 bg-gradient-to-br from-purple-900/10 to-indigo-900/10 rounded-[3rem] p-8 md:p-16 border border-white/5 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 blur-[100px] rounded-full"></div>
+        <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h3 className="text-3xl font-bold text-white mb-6">Why businesses fail to scale?</h3>
-            <div className="space-y-6">
-              <div className="flex gap-4 items-start">
-                <div className="mt-1 w-6 h-6 rounded-full bg-red-500/20 border border-red-500/50 flex items-center justify-center flex-shrink-0">
-                  <span className="text-red-500 text-xs">✕</span>
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-8 tracking-tighter">Why businesses hit a ceiling?</h3>
+            <div className="space-y-8">
+              <div className="flex gap-6 items-start">
+                <div className="mt-1 w-8 h-8 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center flex-shrink-0">
+                  <span className="text-red-500 text-sm font-bold">✕</span>
                 </div>
                 <div>
-                  <p className="text-white font-medium">Leaking conversion funnels</p>
-                  <p className="text-sm text-gray-500">Most traffic is lost because of manual follow-ups that take too long.</p>
+                  <p className="text-white font-bold text-lg">Manual Bottlenecks</p>
+                  <p className="text-gray-500 font-medium">Human follow-ups take hours, resulting in lead decay and lost revenue.</p>
                 </div>
               </div>
-              <div className="flex gap-4 items-start">
-                <div className="mt-1 w-6 h-6 rounded-full bg-green-500/20 border border-green-500/50 flex items-center justify-center flex-shrink-0">
-                  <span className="text-green-500 text-xs">✓</span>
+              <div className="flex gap-6 items-start">
+                <div className="mt-1 w-8 h-8 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center flex-shrink-0">
+                  <span className="text-purple-500 text-sm font-bold">✓</span>
                 </div>
                 <div>
-                  <p className="text-white font-medium">The SysAgen Lab Advantage</p>
-                  <p className="text-sm text-gray-500">Instant AI responses 24/7 lead to 4x higher closing rates.</p>
+                  <p className="text-white font-bold text-lg text-purple-400">The Lab Advantage</p>
+                  <p className="text-gray-400 font-medium">Instant AI response 24/7/365 results in up to 4x higher closing velocity.</p>
                 </div>
               </div>
             </div>
-            <div className="mt-8">
-               <a href="#contact" className="text-purple-400 font-bold hover:text-purple-300 transition-colors inline-flex items-center gap-2">
-                See it in action
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            <div className="mt-12">
+               <a href="#contact" className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-2xl font-bold transition-all inline-flex items-center gap-3">
+                See Our Framework
+                <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </a>
             </div>
           </div>
-          <div className="relative aspect-square md:aspect-video rounded-2xl overflow-hidden shadow-2xl">
-             <img src="https://picsum.photos/600/400?blur=5" className="object-cover w-full h-full opacity-40" alt="Comparison" />
+          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+             <img src="https://picsum.photos/800/600?grayscale&blur=5" className="object-cover w-full h-full opacity-30 group-hover:scale-110 transition-transform duration-[2000ms]" alt="Comparison" />
              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-black/60 p-6 rounded-2xl border border-white/10 backdrop-blur-md">
-                   <div className="text-4xl font-bold text-white mb-1">+248%</div>
-                   <div className="text-xs text-gray-400 uppercase tracking-widest">Growth identified</div>
+                <div className="bg-black/40 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-3xl text-center">
+                   <div className="text-6xl font-black text-white mb-2 tracking-tighter">+248%</div>
+                   <div className="text-[10px] text-purple-400 font-black uppercase tracking-[0.3em]">Growth Unlocked</div>
                 </div>
              </div>
           </div>

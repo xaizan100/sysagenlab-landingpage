@@ -24,10 +24,10 @@ const App: React.FC = () => {
 
   return (
     <div className="relative min-h-screen bg-[#0a0a0a] selection:bg-purple-500 selection:text-white">
-      {/* Background Gradients */}
+      {/* Background Gradients - Reverted to Original Purple/Indigo */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-purple-900/10 blur-[120px] rounded-full"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-blue-900/10 blur-[120px] rounded-full"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-900/10 blur-[120px] rounded-full"></div>
       </div>
 
       <div className="relative z-10">
@@ -53,9 +53,9 @@ const App: React.FC = () => {
       {/* Global Toast Notification */}
       {toast && (
         <div className="fixed bottom-8 right-8 z-[100] animate-fade-in">
-          <div className="bg-black/80 backdrop-blur-xl border border-white/10 px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3">
-            <div className="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></div>
-            <span className="text-white text-sm font-medium">{toast}</span>
+          <div className="bg-black/90 backdrop-blur-2xl border border-white/10 px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4">
+            <div className="w-2.5 h-2.5 rounded-full bg-purple-500 animate-pulse"></div>
+            <span className="text-white text-sm font-bold tracking-tight">{toast}</span>
           </div>
         </div>
       )}

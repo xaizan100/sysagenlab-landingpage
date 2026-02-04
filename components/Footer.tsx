@@ -12,48 +12,60 @@ const Footer: React.FC<FooterProps> = ({ onPlaceholderClick }) => {
   };
 
   return (
-    <footer className="bg-black border-t border-white/5 pt-16 pb-8 px-4">
+    <footer className="bg-black border-t border-white/5 pt-24 pb-12 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-2">
-             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">S</span>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+          <div className="col-span-1 md:col-span-2">
+             <div className="flex items-center gap-3 mb-8 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-500 rounded-2xl flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+                <span className="text-white font-black text-2xl">S</span>
               </div>
-              <span className="text-xl font-bold text-white">SYSAGEN LAB</span>
+              <span className="text-2xl font-black tracking-tighter text-white">
+                SYSAGEN<span className="text-purple-500 ml-0.5">LAB</span>
+              </span>
             </div>
-            <p className="text-gray-500 max-w-sm">
-              We help high-growth businesses leverage artificial intelligence to automate operations and generate revenue 24/7.
+            <p className="text-gray-500 max-w-md text-lg leading-relaxed">
+              We engineer high-performance AI systems that turn operations into revenue. Join the automated revolution.
             </p>
+            <div className="mt-8 flex gap-4">
+              <div className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-400">
+                Operating in <span className="text-white font-bold">San Francisco, CA</span>
+              </div>
+            </div>
           </div>
           
           <div>
-            <h4 className="text-white font-bold mb-4 text-sm uppercase tracking-widest">Platform</h4>
-            <ul className="space-y-3 text-sm text-gray-500">
-              <li><a href="#features" className="hover:text-purple-400 transition-colors">Features</a></li>
-              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Integrations')} className="hover:text-purple-400 transition-colors">Integrations</a></li>
-              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Pricing')} className="hover:text-purple-400 transition-colors">Pricing</a></li>
+            <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-[0.2em]">Ecosystem</h4>
+            <ul className="space-y-4 text-gray-500 font-medium">
+              <li><a href="#features" className="hover:text-purple-400 transition-colors">AI Solutions</a></li>
+              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Partner Portal')} className="hover:text-purple-400 transition-colors">Partner Portal</a></li>
+              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Developer API')} className="hover:text-purple-400 transition-colors">Developer API</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-4 text-sm uppercase tracking-widest">Legal</h4>
-            <ul className="space-y-3 text-sm text-gray-500">
-              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Privacy Policy')} className="hover:text-purple-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Terms of Service')} className="hover:text-purple-400 transition-colors">Terms of Service</a></li>
+            <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-[0.2em]">Company</h4>
+            <ul className="space-y-4 text-gray-500 font-medium">
+              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Success Stories')} className="hover:text-purple-400 transition-colors">Success Stories</a></li>
+              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Privacy')} className="hover:text-purple-400 transition-colors">Privacy</a></li>
+              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Terms')} className="hover:text-purple-400 transition-colors">Terms</a></li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-6">
-          <p className="text-xs text-gray-600 italic text-center sm:text-left">
-            © 2025 SysAgen Lab Inc. Built for the automated future. <br className="sm:hidden" />
-            Designed with <span className="text-purple-500">♥</span> for high performance.
+        <div className="pt-12 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-8">
+          <p className="text-xs text-gray-600 font-medium text-center sm:text-left tracking-wide">
+            © 2025 SysAgen Lab Inc. All systems go. <br className="sm:hidden" />
+            Designed for <span className="text-purple-500">infinite scalability</span>.
           </p>
-          <div className="flex gap-6 text-gray-600">
-            <a href="#" onClick={(e) => handlePlaceholder(e, 'Social Feed')} className="hover:text-white transition-colors">
-              <span className="sr-only">Twitter</span>
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          <div className="flex gap-8 text-gray-500">
+            <a href="#" onClick={(e) => handlePlaceholder(e, 'X')} className="hover:text-white transition-all transform hover:scale-110">
+              <span className="sr-only">X (Twitter)</span>
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" onClick={(e) => handlePlaceholder(e, 'LinkedIn')} className="hover:text-white transition-all transform hover:scale-110">
+              <span className="sr-only">LinkedIn</span>
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
           </div>
         </div>

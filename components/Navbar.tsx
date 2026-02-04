@@ -17,17 +17,17 @@ const Navbar: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-6">
       <nav className={`
-        mx-auto max-w-4xl transition-all duration-300 border border-white/10
-        ${scrolled || mobileMenuOpen ? 'bg-black/90 backdrop-blur-md rounded-2xl py-3 px-6 shadow-2xl' : 'bg-transparent py-4 px-6'}
+        mx-auto max-w-5xl transition-all duration-500 border border-white/10
+        ${scrolled || mobileMenuOpen ? 'bg-black/90 backdrop-blur-xl rounded-2xl py-3 px-6 shadow-2xl' : 'bg-transparent py-4 px-6'}
         flex flex-col md:flex-row items-stretch md:items-center justify-between
       `}>
         <div className="flex items-center justify-between w-full md:w-auto">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-purple-500/20">
-              <span className="text-white font-bold text-lg">S</span>
+          <div className="flex items-center gap-3 group cursor-pointer">
+            <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-500 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform duration-500">
+              <span className="text-white font-black text-xl">S</span>
             </div>
-            <span className="text-xl font-bold tracking-tight text-white">
-              SYSAGEN<span className="text-purple-500">LAB</span>
+            <span className="text-xl font-extrabold tracking-tighter text-white">
+              SYSAGEN<span className="text-purple-500 ml-0.5">LAB</span>
             </span>
           </div>
 
@@ -49,16 +49,16 @@ const Navbar: React.FC = () => {
           ${mobileMenuOpen ? 'flex flex-col mt-4 pb-4 animate-fade-in' : 'hidden'} 
           md:flex md:flex-row md:items-center md:mt-0 md:pb-0 gap-6 md:gap-8
         `}>
-          <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-            <a href="#features" onClick={closeMenu} className="text-sm font-medium text-gray-400 hover:text-white transition-colors py-2 md:py-0">Features</a>
-            <a href="#testimonials" onClick={closeMenu} className="text-sm font-medium text-gray-400 hover:text-white transition-colors py-2 md:py-0">Success Stories</a>
+          <div className="flex flex-col md:flex-row gap-4 md:gap-8">
+            <a href="#features" onClick={closeMenu} className="text-sm font-semibold text-gray-400 hover:text-purple-400 transition-colors py-2 md:py-0">Solutions</a>
+            <a href="#testimonials" onClick={closeMenu} className="text-sm font-semibold text-gray-400 hover:text-purple-400 transition-colors py-2 md:py-0">Case Studies</a>
           </div>
           <a 
             href="#contact" 
             onClick={closeMenu}
-            className="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-gray-200 transition-all hover:scale-105 text-center shadow-lg shadow-white/5"
+            className="bg-purple-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-purple-500 transition-all hover:scale-105 text-center shadow-lg shadow-purple-500/20 active:scale-95"
           >
-            Start Growing
+            Book Audit
           </a>
         </div>
       </nav>
