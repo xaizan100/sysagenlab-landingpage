@@ -22,8 +22,8 @@ const Navbar: React.FC = () => {
         flex flex-col md:flex-row items-stretch md:items-center justify-between
       `}>
         <div className="flex items-center justify-between w-full md:w-auto">
-          <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-500 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform duration-500">
+          <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+            <div className="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center">
               <span className="text-white font-black text-xl">S</span>
             </div>
             <span className="text-xl font-extrabold tracking-tighter text-white">
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
 
           <button 
             onClick={toggleMenu}
-            className="md:hidden p-2 text-gray-400 hover:text-white transition-colors"
+            className="md:hidden p-2 text-gray-400 hover:text-white"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileMenuOpen ? (
@@ -47,16 +47,14 @@ const Navbar: React.FC = () => {
 
         <div className={`
           ${mobileMenuOpen ? 'flex flex-col mt-4 pb-4 animate-fade-in' : 'hidden'} 
-          md:flex md:flex-row md:items-center md:mt-0 md:pb-0 gap-6 md:gap-8
+          md:flex md:flex-row md:items-center md:mt-0 md:pb-0 gap-8
         `}>
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-            <a href="#features" onClick={closeMenu} className="text-sm font-semibold text-gray-400 hover:text-purple-400 transition-colors py-2 md:py-0">Solutions</a>
-            <a href="#testimonials" onClick={closeMenu} className="text-sm font-semibold text-gray-400 hover:text-purple-400 transition-colors py-2 md:py-0">Case Studies</a>
-          </div>
+          <a href="#features" onClick={closeMenu} className="text-sm font-semibold text-gray-400 hover:text-white transition-colors">Solutions</a>
+          <a href="#testimonials" onClick={closeMenu} className="text-sm font-semibold text-gray-400 hover:text-white transition-colors">Case Studies</a>
           <a 
             href="#contact" 
             onClick={closeMenu}
-            className="bg-purple-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-purple-500 transition-all hover:scale-105 text-center shadow-lg shadow-purple-500/20 active:scale-95"
+            className="bg-purple-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-purple-500 transition-all text-center"
           >
             Book Audit
           </a>

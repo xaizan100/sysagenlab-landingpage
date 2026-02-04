@@ -9,37 +9,29 @@ const Hero: React.FC = () => {
 
       <div className="max-w-4xl mx-auto relative">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-[10px] md:text-xs font-bold text-purple-400 mb-8 animate-fade-in uppercase tracking-widest">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
-          </span>
-          The Future of Operations is Here
+          AI Automation Agency
         </div>
 
-        <h1 className="text-5xl md:text-8xl font-bold tracking-tighter text-white mb-6 leading-[0.95]">
-          Stop burning hours. <br />
-          <span className="font-serif italic text-purple-400">Start scaling systems.</span>
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6 leading-tight">
+          Eliminate Manual Tasks. <br />
+          <span className="text-purple-500">Automate Your Sales & Ops.</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
-          You are paying a "Manual Tax" every day your business relies on human effort for repetitive tasks. SysAgen Lab builds the <span className="text-white">Autonomous Infrastructure</span> that handles your leads, apps, and outreach at neural speed.
+          We build AI systems that handle your lead qualification, data entry, and customer outreach. Stop wasting 20+ hours a week on repetitive work that a machine can do faster and without errors.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a 
             href="#contact" 
-            className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-pink-500 text-white px-10 py-5 rounded-2xl font-black text-lg hover:shadow-[0_20px_40px_rgba(168,85,247,0.3)] transition-all hover:scale-105 active:scale-95"
+            className="w-full sm:w-auto bg-white text-black px-10 py-5 rounded-2xl font-black text-lg hover:bg-purple-500 hover:text-white transition-all hover:scale-105 active:scale-95"
           >
-            Get My Free AI Roadmap
+            Book A 15-Minute Audit
           </a>
           <div className="flex items-center gap-4 text-left">
-            <div className="flex -space-x-3">
-               {[1,2,3,4].map(i => (
-                 <img key={i} src={`https://picsum.photos/100/100?random=${i+10}`} className="w-10 h-10 rounded-full border-2 border-black object-cover" alt="Client" />
-               ))}
-            </div>
             <div className="text-xs text-gray-500 font-bold uppercase tracking-tight">
-              Join <span className="text-white">50+ founders</span> <br /> who automated their growth.
+              Average ROI: <span className="text-white">10x in first 90 days</span> <br /> 
+              Systems built for <span className="text-white">50+ agencies</span>
             </div>
           </div>
         </div>

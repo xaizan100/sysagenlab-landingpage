@@ -5,44 +5,23 @@ import { Testimonial } from '../types';
 const reviews: Testimonial[] = [
   {
     name: "Alex Rivera",
-    handle: "@arivera_growth",
-    text: "SysAgen Lab completely transformed how we handle cold outreach. Their AI agents are booking 10+ high-quality meetings a week without us lifting a finger.",
+    handle: "CEO, Rivera Media",
+    text: "SysAgen Lab automated our lead triage. We went from a 4-hour response time to 30 seconds. Our conversion rate increased by 40% in two months.",
     avatar: "https://picsum.photos/100/100?random=1",
     rating: 5
   },
   {
     name: "Sarah Chen",
-    handle: "@sarah_designs",
-    text: "The automated fulfillment workflows they set up saved my agency 40 hours a week. It feels like I have a 5-person team, but it's all AI.",
+    handle: "Founder, SC Designs",
+    text: "They integrated our CRM with our project management tools. We saved 15 hours of admin work per week. The system paid for itself in 3 weeks.",
     avatar: "https://picsum.photos/100/100?random=2",
     rating: 5
   },
   {
     name: "Marcus Thorne",
-    handle: "@thorne_ventures",
-    text: "Highly recommended for any business owner looking to scale. The value proposition is insane. They paid for themselves in the first month.",
+    handle: "Ops Director, Thorne Ltd",
+    text: "The AI outreach bot they built is booking more qualified meetings than our full-time SDR did last year. Highly efficient and cost-effective.",
     avatar: "https://picsum.photos/100/100?random=3",
-    rating: 5
-  },
-  {
-    name: "Jessica Wu",
-    handle: "@jess_w",
-    text: "I was skeptical about AI, but SysAgen Lab proved me wrong. The lead quality is better than what my human SDRs were finding.",
-    avatar: "https://picsum.photos/100/100?random=4",
-    rating: 5
-  },
-  {
-    name: "David Smith",
-    handle: "@davids_tech",
-    text: "The technical depth these guys have is incredible. It's not just a wrapper; they build real infrastructure.",
-    avatar: "https://picsum.photos/100/100?random=5",
-    rating: 5
-  },
-  {
-    name: "Elena Rodriguez",
-    handle: "@elena_prod",
-    text: "Efficiency doubled, stress halved. If you're stuck at 50k/mo, these are the people you need to talk to.",
-    avatar: "https://picsum.photos/100/100?random=6",
     rating: 5
   }
 ];
@@ -51,33 +30,25 @@ const Testimonials: React.FC = () => {
   return (
     <section className="py-24 px-4 bg-black">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 relative">
-          <div className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none">
-             <svg className="w-32 h-32 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white relative z-10 tracking-tighter">Business owners love SysAgen Lab</h2>
-          <p className="text-gray-500 mt-4 font-medium italic">Join hundreds of entrepreneurs scaling with AI systems.</p>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter">Verified Business Results</h2>
+          <p className="text-gray-500 mt-4 font-medium italic">How we helped our clients reduce costs and increase output.</p>
         </div>
 
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((review, i) => (
-            <div key={i} className="break-inside-avoid-column bg-[#111] border-gradient-shadow p-6 rounded-3xl flex flex-col transition-all hover:border-purple-500/50 group">
-              <div className="flex items-center gap-4 mb-4">
-                <img src={review.avatar} alt={review.name} className="w-10 h-10 rounded-full border border-white/10 grayscale group-hover:grayscale-0 transition-all" />
-                <div>
-                  <h4 className="font-bold text-white text-sm">{review.name}</h4>
-                  <p className="text-xs text-purple-400 font-bold uppercase tracking-tighter">{review.handle}</p>
+            <div key={i} className="bg-[#111] border border-white/5 p-8 rounded-3xl flex flex-col justify-between">
+              <div>
+                <p className="text-gray-400 text-sm leading-relaxed mb-6 font-medium">
+                  "{review.text}"
+                </p>
+                <div className="flex items-center gap-4">
+                  <img src={review.avatar} alt={review.name} className="w-10 h-10 rounded-full grayscale" />
+                  <div>
+                    <h4 className="font-bold text-white text-sm">{review.name}</h4>
+                    <p className="text-xs text-purple-400 font-bold uppercase tracking-tighter">{review.handle}</p>
+                  </div>
                 </div>
-              </div>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4 italic font-medium">
-                "{review.text}"
-              </p>
-              <div className="flex gap-1">
-                {[...Array(review.rating)].map((_, j) => (
-                  <svg key={j} className="w-4 h-4 text-purple-400 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
               </div>
             </div>
           ))}
