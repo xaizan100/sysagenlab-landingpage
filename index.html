@@ -18,18 +18,14 @@
     <meta property="og:description" content="Scale your business with intelligent automation. Join 50+ growing businesses using SysAgen Lab.">
     <meta property="og:image" content="https://picsum.photos/1200/630?grayscale">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sysagenlab.ai/">
-    <meta property="twitter:title" content="SysAgen Lab - AI Growth Agency">
-    <meta property="twitter:description" content="Scale your business with intelligent automation. Get a Free AI Audit today.">
-    <meta property="twitter:image" content="https://picsum.photos/1200/630?grayscale">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <style>
+      :root {
+        --brand-purple: #8b5cf6;
+      }
       body {
         font-family: 'Inter', sans-serif;
         background-color: #0a0a0a;
@@ -37,58 +33,58 @@
         margin: 0;
         overflow-x: hidden;
         scroll-behavior: smooth;
-        position: relative;
-        min-height: 100vh;
       }
       .font-serif {
         font-family: 'Instrument Serif', serif;
       }
-      .bg-glow {
-        background: radial-gradient(circle at 50% -20%, #222 0%, #0a0a0a 70%);
+      
+      /* Mobile Performance Styles */
+      @keyframes spin { 100% { transform: rotate(360deg); } }
+      @keyframes pulse-bg { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+      
+      #root:empty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #0a0a0a;
       }
+
+      #root:empty::after {
+        content: "";
+        width: 32px;
+        height: 32px;
+        border: 2px solid rgba(255,255,255,0.05);
+        border-top-color: var(--brand-purple);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin-top: 20px;
+      }
+
+      .splash-logo {
+        font-weight: 800;
+        letter-spacing: -0.05em;
+        font-size: 24px;
+        color: white;
+        animation: pulse-bg 2s ease-in-out infinite;
+      }
+
       .border-gradient-shadow {
         box-shadow: 0 0 0 1px rgba(255,255,255,0.05), 0 10px 16px rgba(0,0,0,0.4);
         border: 1px solid rgba(255,255,255,0.1);
       }
       
-      /* Mobile Safari Glassmorphism Compatibility */
-      .backdrop-blur-md {
-        -webkit-backdrop-filter: blur(12px);
-        backdrop-filter: blur(12px);
-      }
       .backdrop-blur-xl {
         -webkit-backdrop-filter: blur(24px);
         backdrop-filter: blur(24px);
       }
 
-      .animate-float {
-        animation: float 6s ease-in-out infinite;
-      }
       @keyframes float {
         0%, 100% { transform: translateY(0px); }
         50% { transform: translateY(-10px); }
       }
-      
-      /* Custom scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0a0a0a;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #222;
-        border-radius: 10px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #333;
-      }
-
-      /* Initial background to prevent flicker */
-      #root:empty {
-        background: #0a0a0a;
-        min-height: 100vh;
-      }
+      .animate-float { animation: float 6s ease-in-out infinite; }
     </style>
     <script type="importmap">
 {
@@ -96,20 +92,16 @@
     "react": "https://esm.sh/react@19.0.0",
     "react-dom": "https://esm.sh/react-dom@19.0.0",
     "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/"
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
   }
 }
 </script>
   </head>
   <body>
-    <div id="root"></div>
-    <!-- Entry point -->
+    <div id="root">
+      <div class="splash-logo">SYSAGEN<span style="color: #8b5cf6;">LAB</span></div>
+    </div>
     <script type="module" src="index.tsx"></script>
-    <noscript>
-      <div style="padding: 20px; text-align: center; color: white;">
-        Please enable JavaScript to view this application.
-      </div>
-    </noscript>
   </body>
 </html>

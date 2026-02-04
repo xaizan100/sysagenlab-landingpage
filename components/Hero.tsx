@@ -13,16 +13,16 @@ const Hero: React.FC = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
           </span>
-          The Manual Era is Killing Your Margin
+          Unlocking Exponential Growth
         </div>
 
         <h1 className="text-5xl md:text-8xl font-bold tracking-tighter text-white mb-6 leading-[0.95]">
-          Stop trading time <br />
-          <span className="font-serif italic text-purple-400">for revenue.</span>
+          Your business is <br />
+          <span className="font-serif italic text-purple-400">working too hard.</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
-          Your business is leaking revenue through manual follow-ups and fragmented apps. SysAgen Lab builds the AI infrastructure to plug the holes and scale exponentially.
+          The manual era is over. We replace fragmented workflows and silent pipelines with custom AI infrastructure that generates revenue while you sleep.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
             href="#contact" 
             className="w-full sm:w-auto bg-white text-black px-10 py-5 rounded-2xl font-black text-lg hover:bg-purple-50 transition-all hover:scale-105 shadow-[0_20px_40px_rgba(168,85,247,0.15)] active:scale-95"
           >
-            Claim Your Free AI Audit
+            Start Free AI Audit
           </a>
           <div className="flex items-center gap-4 text-left">
             <div className="flex -space-x-3">
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
                ))}
             </div>
             <div className="text-xs text-gray-500 font-bold uppercase tracking-tight">
-              Helping <span className="text-white">50+ founders</span> <br /> escape the manual grind.
+              Trusted by <span className="text-white">50+ agencies</span> <br /> scaling with SysAgen Lab
             </div>
           </div>
         </div>
