@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
             className="bg-purple-600 text-white px-4 py-2 md:px-5 md:py-2 rounded-xl text-[12px] md:text-sm font-bold hover:bg-purple-500 transition-all text-center shadow-[0_0_20px_rgba(139,92,246,0.3)] mt-4 md:mt-0"
           >
-            Free Audit
+            Book a Free Call
           </a>
         </div>
       </nav>

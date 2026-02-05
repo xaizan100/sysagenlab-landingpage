@@ -11,10 +11,10 @@ const ValuePropSection: React.FC = () => {
             The Scaling Killers
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-[1.1]">
-            Why Your Agency <br className="hidden md:block" /> Isn't Growing Faster.
+            Why Your Business <br className="hidden md:block" /> Isn't Growing Faster.
           </h2>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-medium">
-            Most agencies hit a wall because they are powered by manual labor. If you don't fix these 6 leaks, you are capping your own revenue.
+            Most businesses hit a wall because they are powered by manual labor. If you don't fix these 6 leaks, you are capping your own revenue.
           </p>
         </div>
 
@@ -128,7 +128,7 @@ const ValuePropSection: React.FC = () => {
             <h3 className="text-3xl font-bold text-white mb-8 tracking-tight text-left">The Competitive Advantage</h3>
             <div className="space-y-6">
               <div className="p-6 rounded-2xl bg-red-500/5 border border-red-500/10">
-                <p className="text-red-400 font-bold mb-3">Manual Agency (Low Margin)</p>
+                <p className="text-red-400 font-bold mb-3">Traditional Business (Low Margin)</p>
                 <ul className="text-gray-500 text-sm space-y-3 font-medium">
                   <li>• Reactive lead management</li>
                   <li>• High human error & churn</li>
@@ -136,7 +136,7 @@ const ValuePropSection: React.FC = () => {
                 </ul>
               </div>
               <div className="p-6 rounded-2xl bg-green-500/5 border border-green-500/10">
-                <p className="text-green-400 font-bold mb-3">SysAgen Agency (High Margin)</p>
+                <p className="text-green-400 font-bold mb-3">SysAgen Automated Business</p>
                 <ul className="text-gray-400 text-sm space-y-3 font-medium">
                   <li>• Proactive, instant automation</li>
                   <li>• 100% data accuracy & speed</li>
@@ -149,7 +149,7 @@ const ValuePropSection: React.FC = () => {
             <div className="text-6xl font-black text-white mb-2">3.5x</div>
             <div className="text-[10px] text-purple-400 font-black uppercase tracking-[0.2em] mb-8">Average Profit Margin Increase</div>
             <a href="#contact" className="w-full bg-purple-600 text-white py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-purple-500 transition-all active:scale-95 shadow-lg shadow-purple-500/20">
-              Claim Your Free Audit
+              Book a Free Call
             </a>
           </div>
         </div>

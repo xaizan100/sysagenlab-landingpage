@@ -88,7 +88,7 @@ const BookingSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold text-sm">Expert Advice</h4>
-                  <p className="text-gray-500 text-xs mt-1">No fluff. Just practical systems engineering for your agency.</p>
+                  <p className="text-gray-500 text-xs mt-1">No fluff. Just practical systems engineering for your business.</p>
                 </div>
               </div>
 

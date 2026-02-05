@@ -55,7 +55,7 @@ const Footer: React.FC<FooterProps> = ({ onPlaceholderClick }) => {
         <div className="pt-12 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-8">
           <p className="text-xs text-gray-600 font-medium text-center sm:text-left tracking-wide">
             © 2025 SysAgen Lab Ltd. All systems go. <br className="sm:hidden" />
-            Empowering agencies with <span className="text-blue-500">intelligent infrastructure</span>.
+            Empowering businesses with <span className="text-blue-500">intelligent infrastructure</span>.
           </p>
           <div className="flex gap-8 text-gray-500">
             <a href="#" onClick={(e) => handlePlaceholder(e, 'X')} className="hover:text-white transition-all transform hover:scale-110">

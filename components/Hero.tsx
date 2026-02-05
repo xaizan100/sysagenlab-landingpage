@@ -10,11 +10,11 @@ const Hero: React.FC = () => {
 
       <div className="max-w-5xl mx-auto relative">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-[10px] md:text-xs font-black text-purple-400 mb-8 animate-fade-in uppercase tracking-[0.2em]">
-          Agency Growth Engineered
+          Business Growth Engineered
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-8 leading-[1.1] md:leading-[0.95] text-center">
-          Scale Your Agency With <br />
+          Scale Your Business With <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-purple-600">AI Automation.</span>
         </h1>
 
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
             href="#contact" 
             className="w-full sm:w-auto bg-white text-black px-6 py-3 md:px-10 md:py-5 rounded-2xl font-black text-sm md:text-lg hover:bg-purple-600 hover:text-white transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-purple-500/10"
           >
-            Book Your Free AI Audit
+            Book a Free Call
           </a>
           <div className="flex items-center gap-4 text-left">
             <div className="text-[10px] md:text-xs text-gray-500 font-bold uppercase tracking-tight">
