@@ -1,7 +1,21 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Hero: React.FC = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveSlide((prev) => (prev === 0 ? 1 : 0));
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const slides = [
+    "Stop losing hours to manual lead follow-up and admin work. We build custom AI systems that book your meetings and manage your operations, so you can grow your revenue without hiring more staff.",
+    "Every automation solution we engineer is 100% customized to your specific business needs. We don't believe in one-size-fits-all; we build for your unique bottlenecks."
+  ];
+
   return (
     <section className="relative pt-32 md:pt-48 pb-20 px-6 text-center overflow-hidden">
       {/* Background Ambience */}
@@ -18,9 +32,22 @@ const Hero: React.FC = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-purple-600">AI Automation.</span>
         </h1>
 
-        <p className="text-base md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
-          Stop losing hours to manual lead follow-up and admin work. We build custom AI systems that book your meetings and manage your operations, so you can grow your revenue without hiring more staff.
-        </p>
+        <div className="relative h-24 md:h-20 mb-12 overflow-hidden">
+          {slides.map((text, index) => (
+            <p
+              key={index}
+              className={`absolute inset-0 text-base md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-medium transition-all duration-700 ease-in-out transform ${
+                activeSlide === index 
+                  ? 'translate-y-0 opacity-100' 
+                  : index < activeSlide 
+                    ? '-translate-y-full opacity-0' 
+                    : 'translate-y-full opacity-0'
+              }`}
+            >
+              {text}
+            </p>
+          ))}
+        </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a 

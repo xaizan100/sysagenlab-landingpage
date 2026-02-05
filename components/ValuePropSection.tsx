@@ -4,50 +4,50 @@ import React from 'react';
 const ValuePropSection: React.FC = () => {
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto">
-      {/* THE PROBLEMS - 6 Targeted Bottlenecks */}
+      {/* THE PROBLEMS - Personal and Specific */}
       <div className="mb-40">
         <div className="text-center mb-16 md:mb-20">
           <div className="inline-block bg-red-500/10 text-red-400 font-black px-5 py-2 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 border border-red-500/20">
-            The Scaling Killers
+            Your Specific Growth Blockers
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-[1.1]">
-            Why Your Business <br className="hidden md:block" /> Isn't Growing Faster.
+            Is your business <br className="hidden md:block" /> actually working for you?
           </h2>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-medium">
-            Most businesses hit a wall because they are powered by manual labor. If you don't fix these 6 leaks, you are capping your own revenue.
+            You are likely feeling the friction of manual work every single day. We don't provide generic software; we solve the specific issues that keep you awake at night.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {[
             {
-              title: "Cold Lead Decay",
-              desc: "Leads get cold in minutes. If you aren't replying instantly, your competitors are stealing your future revenue.",
+              title: "Your Leads Are Cooling",
+              desc: "You're spending money to get people interested, but if you don't reply in seconds, you're throwing that investment away. We fix your response time instantly.",
               icon: "📩"
             },
             {
-              title: "The 'Admin' Tax",
-              desc: "Your best staff are wasting 10+ hours a week on CRM updates and scheduling instead of focusing on high-level strategy.",
+              title: "You're Trapped in Admin",
+              desc: "You didn't start your business to update CRMs. You're losing hours every week that should be spent on high-level direction and growth.",
               icon: "⌨️"
             },
             {
-              title: "Profit-Eating Payroll",
-              desc: "Scaling typically means hiring more people, which increases your overhead and crushes your profit margins.",
+              title: "Your Payroll is Bloated",
+              desc: "You feel like you need more people just to keep up, but more staff means more management for you. There is a more efficient way to scale your output.",
               icon: "📉"
             },
             {
-              title: "Unqualified Meetings",
-              desc: "Your calendar is full of 'tire-kickers' who aren't a fit. You are wasting your most valuable asset: time.",
+              title: "Wasted Sales Energy",
+              desc: "You're taking calls with people who aren't ready to buy. Your calendar should only have qualified buyers who are a perfect match for your specific service.",
               icon: "🛑"
             },
             {
-              title: "Content Burnout",
-              desc: "Producing personalized outreach and social assets manually is slow and impossible to scale without errors.",
+              title: "Your Content is Stalling",
+              desc: "You know you need to be visible, but creating assets takes too much of your focus. We build custom models that speak in your specific brand voice.",
               icon: "✍️"
             },
             {
-              title: "Reporting Chaos",
-              desc: "Fragmented data across tools means you have no clear picture of your ROI, leading to guesswork in your business.",
+              title: "Flying Blind",
+              desc: "You don't have a clear, real-time view of your ROI because your data is scattered. We build a unified brain for your specific business metrics.",
               icon: "📊"
             }
           ].map((item, idx) => (
@@ -62,50 +62,50 @@ const ValuePropSection: React.FC = () => {
         </div>
       </div>
 
-      {/* THE SOLUTIONS - 6 Direct AI Benefits */}
+      {/* THE SOLUTIONS - Emphasizing Customization */}
       <div className="pt-24 border-t border-white/5">
         <div className="text-center mb-16 md:mb-20">
           <div className="inline-block bg-green-500/10 text-green-400 font-black px-5 py-2 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 border border-green-500/20">
-            The AI Transformation
+            Tailored AI Engineering
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-[1.1]">
-            Build a Machine <br className="hidden md:block" /> That Scales Without You.
+            Systems built specifically <br className="hidden md:block" /> for your workflow.
           </h2>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-medium">
-            We engineer the infrastructure that automates the grunt work, ensuring 100% consistency and zero burnout.
+            We don't do 'off-the-shelf'. We audit your unique process and engineer custom AI infrastructure that fits your business like a glove.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {[
             {
-              title: "24/7 AI Receptionist",
-              desc: "Instantly capture and nurture leads at any time of day. Our bots answer questions and book calls while you sleep.",
+              title: "Your Custom AI Receptionist",
+              desc: "A bot trained specifically on your product, your pricing, and your tone of voice. It nurtures your leads exactly the way you would.",
               icon: "🤖"
             },
             {
-              title: "Self-Updating Systems",
-              desc: "We sync your CRM, Email, and Slack so data flows automatically. No more manual entry or missed follow-ups.",
+              title: "Workflow Architecture",
+              desc: "We don't just 'connect' apps. We architect a custom flow that mirrors your ideal operations, removing every manual click you currently make.",
               icon: "⚙️"
             },
             {
-              title: "High-Margin Delivery",
-              desc: "Automate parts of your service delivery to handle 5x more clients with the same team size and zero quality drop.",
+              title: "Unique Service Automation",
+              desc: "We automate the heavy lifting of your specific delivery process, allowing you to scale without needing a massive management layer.",
               icon: "🚀"
             },
             {
-              title: "Lead Vetting Agents",
-              desc: "Our AI qualifies leads based on your specific criteria before they can book. Only spend time with high-intent buyers.",
+              title: "ICP Vetting Agents",
+              desc: "Custom AI filters that check every prospect against your specific ICP. No more tire-kickers on your calendar, ever again.",
               icon: "🛡️"
             },
             {
-              title: "AI Content Engine",
-              desc: "Scale your outreach with hyper-personalized messaging and assets generated by custom-trained AI models.",
+              title: "Personalized Outreach Engine",
+              desc: "Outreach that doesn't look like spam. Our models use your specific case studies and results to build trust automatically at scale.",
               icon: "💡"
             },
             {
-              title: "Unified ROI Dashboards",
-              desc: "Get real-time, automated reports that pull data from across your stack into one clear view of your business health.",
+              title: "Your Proprietary Dashboard",
+              desc: "A custom-built data command center that gives you the exact insights you need to make decisions for your specific business.",
               icon: "📈"
             }
           ].map((item, idx) => (
@@ -125,22 +125,22 @@ const ValuePropSection: React.FC = () => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-purple-600/5 blur-[100px] pointer-events-none"></div>
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div>
-            <h3 className="text-3xl font-bold text-white mb-8 tracking-tight text-left">The Competitive Advantage</h3>
+            <h3 className="text-3xl font-bold text-white mb-8 tracking-tight text-left">The Difference is Design</h3>
             <div className="space-y-6">
               <div className="p-6 rounded-2xl bg-red-500/5 border border-red-500/10">
-                <p className="text-red-400 font-bold mb-3">Traditional Business (Low Margin)</p>
+                <p className="text-red-400 font-bold mb-3">One-Size-Fits-All Software</p>
                 <ul className="text-gray-500 text-sm space-y-3 font-medium">
-                  <li>• Reactive lead management</li>
-                  <li>• High human error & churn</li>
-                  <li>• Profit disappears into overhead</li>
+                  <li>• You have to change your business to fit the tool</li>
+                  <li>• Generic responses that frustrate your customers</li>
+                  <li>• High learning curve and messy integration</li>
                 </ul>
               </div>
               <div className="p-6 rounded-2xl bg-green-500/5 border border-green-500/10">
-                <p className="text-green-400 font-bold mb-3">SysAgen Automated Business</p>
+                <p className="text-green-400 font-bold mb-3">SysAgen Custom Infrastructure</p>
                 <ul className="text-gray-400 text-sm space-y-3 font-medium">
-                  <li>• Proactive, instant automation</li>
-                  <li>• 100% data accuracy & speed</li>
-                  <li>• Infinite scalability with fixed costs</li>
+                  <li>• Systems built around your existing success</li>
+                  <li>• Hyper-personalized AI that acts like your best staff</li>
+                  <li>• Fully managed transition and 24/7 optimization</li>
                 </ul>
               </div>
             </div>

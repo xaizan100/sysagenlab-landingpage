@@ -61,14 +61,14 @@ const BookingSection: React.FC = () => {
     <section className="py-24 px-4 max-w-7xl mx-auto">
       <div className="bg-[#111] border border-white/10 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-2xl">
         <div className="flex flex-col lg:flex-row">
-          {/* Left Side: Direct Conversion Copy */}
+          {/* Left Side: Personal Conversion Copy */}
           <div className="lg:w-1/3 p-8 md:p-12 lg:p-16 bg-gradient-to-br from-purple-900/10 to-transparent border-b lg:border-b-0 lg:border-r border-white/10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tighter leading-tight">
-              Ready to <br />
-              <span className="text-purple-500">Automate?</span>
+              Solve Your <br />
+              <span className="text-purple-500">Business Issues.</span>
             </h2>
             <p className="text-gray-400 text-base md:text-lg mb-10 leading-relaxed font-medium">
-              Book a call to see how we can eliminate your manual grunt work and free up your team to focus on winning.
+              Let's talk about the specific business issues you're facing so we can build a 100% customized solution for you. We don't believe in generic fixes.
             </p>
 
             <div className="space-y-6">
@@ -77,8 +77,8 @@ const BookingSection: React.FC = () => {
                   <svg className="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-sm">Custom AI Roadmap</h4>
-                  <p className="text-gray-500 text-xs mt-1">We'll show you exactly which parts of your business are ready for automation.</p>
+                  <h4 className="text-white font-bold text-sm">Deep Process Audit</h4>
+                  <p className="text-gray-500 text-xs mt-1">We'll identify the exact bottlenecks currently costing you time and revenue.</p>
                 </div>
               </div>
               
@@ -87,13 +87,13 @@ const BookingSection: React.FC = () => {
                   <svg className="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-sm">Expert Advice</h4>
-                  <p className="text-gray-500 text-xs mt-1">No fluff. Just practical systems engineering for your business.</p>
+                  <h4 className="text-white font-bold text-sm">Your Custom Roadmap</h4>
+                  <p className="text-gray-500 text-xs mt-1">Leave the call with a clear plan on how AI will be engineered for your unique stack.</p>
                 </div>
               </div>
 
               <div className="pt-8 border-t border-white/5">
-                <p className="text-[10px] text-gray-500 font-black uppercase tracking-widest mb-3">Email Support</p>
+                <p className="text-[10px] text-gray-500 font-black uppercase tracking-widest mb-3">Direct Support</p>
                 <a href="mailto:Hello@sysagenlab.co.uk" className="text-white font-bold hover:text-purple-400 transition-colors flex items-center gap-2 group text-sm md:text-base">
                   Hello@sysagenlab.co.uk
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
