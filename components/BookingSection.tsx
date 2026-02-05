@@ -45,7 +45,7 @@ const BookingSection: React.FC = () => {
       config: { 
         layout: "month_view", 
         useSlotsViewOnSmallScreen: true,
-        theme: "dark" // Explicitly setting dark theme for coherence
+        theme: "dark" 
       },
       calLink: "sysagenlab/30min",
     });
@@ -59,16 +59,16 @@ const BookingSection: React.FC = () => {
 
   return (
     <section className="py-24 px-4 max-w-7xl mx-auto">
-      <div className="bg-[#111] border border-white/10 rounded-[3rem] overflow-hidden">
+      <div className="bg-[#111] border border-white/10 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-2xl">
         <div className="flex flex-col lg:flex-row">
-          {/* Left Side: Conversion Copy */}
-          <div className="lg:w-1/3 p-8 md:p-16 bg-gradient-to-br from-purple-900/10 to-transparent border-b lg:border-b-0 lg:border-r border-white/10">
+          {/* Left Side: Direct Conversion Copy */}
+          <div className="lg:w-1/3 p-8 md:p-12 lg:p-16 bg-gradient-to-br from-purple-900/10 to-transparent border-b lg:border-b-0 lg:border-r border-white/10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tighter leading-tight">
-              Book Your 30-Min <br />
-              <span className="text-purple-500">Discovery Call.</span>
+              Ready to <br />
+              <span className="text-purple-500">Automate?</span>
             </h2>
-            <p className="text-gray-400 text-lg mb-10 leading-relaxed font-medium">
-              Select a time that works for you. In this 30-minute discovery session, we will deep-dive into your manual bottlenecks and provide a concrete ROI roadmap for AI automation.
+            <p className="text-gray-400 text-base md:text-lg mb-10 leading-relaxed font-medium">
+              Book a call to see how we can eliminate your manual grunt work and free up your team to focus on winning.
             </p>
 
             <div className="space-y-6">
@@ -77,8 +77,8 @@ const BookingSection: React.FC = () => {
                   <svg className="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-sm">Instant Scheduling</h4>
-                  <p className="text-gray-500 text-xs mt-1">No back-and-forth emails. Sync directly with our calendar.</p>
+                  <h4 className="text-white font-bold text-sm">Custom AI Roadmap</h4>
+                  <p className="text-gray-500 text-xs mt-1">We'll show you exactly which parts of your business are ready for automation.</p>
                 </div>
               </div>
               
@@ -87,14 +87,14 @@ const BookingSection: React.FC = () => {
                   <svg className="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-sm">30-Minute Deep Dive</h4>
-                  <p className="text-gray-500 text-xs mt-1">Comprehensive, straightforward analysis of your business operations.</p>
+                  <h4 className="text-white font-bold text-sm">Expert Advice</h4>
+                  <p className="text-gray-500 text-xs mt-1">No fluff. Just practical systems engineering for your agency.</p>
                 </div>
               </div>
 
               <div className="pt-8 border-t border-white/5">
-                <p className="text-[10px] text-gray-500 font-black uppercase tracking-widest mb-3">Questions?</p>
-                <a href="mailto:Hello@sysagenlab.co.uk" className="text-white font-bold hover:text-purple-400 transition-colors flex items-center gap-2 group">
+                <p className="text-[10px] text-gray-500 font-black uppercase tracking-widest mb-3">Email Support</p>
+                <a href="mailto:Hello@sysagenlab.co.uk" className="text-white font-bold hover:text-purple-400 transition-colors flex items-center gap-2 group text-sm md:text-base">
                   Hello@sysagenlab.co.uk
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </a>
@@ -103,14 +103,12 @@ const BookingSection: React.FC = () => {
           </div>
 
           {/* Right Side: Cal.com Embed */}
-          <div className="lg:w-2/3 min-h-[600px] relative bg-[#0a0a0a]">
-            {/* Calendar Container */}
+          <div className="lg:w-2/3 min-h-[500px] md:min-h-[600px] relative bg-[#0a0a0a]">
             <div 
               id="my-cal-inline-30min" 
-              className="w-full h-full min-h-[600px] overflow-auto scrollbar-hide"
+              className="w-full h-full min-h-[500px] md:min-h-[600px] overflow-auto scrollbar-hide"
             ></div>
             
-            {/* Subtle Overlay Decoration */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-purple-600/5 blur-[60px] pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-600/5 blur-[60px] pointer-events-none"></div>
           </div>
