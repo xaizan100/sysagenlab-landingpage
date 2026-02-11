@@ -29,8 +29,8 @@ const Hero: React.FC = () => {
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-8 leading-[1.1] md:leading-[0.95] text-center">
-          Scale Your Business With <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-purple-600">AI Software & Automation.</span>
+          10x Your Revenue With <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-purple-600">AI Driven Software & Automation Systems.</span>
         </h1>
 
         <div className="relative h-24 md:h-20 mb-12 overflow-hidden">
