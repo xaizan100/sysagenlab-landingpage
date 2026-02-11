@@ -68,7 +68,7 @@ const BookingSection: React.FC = () => {
               <span className="text-purple-500">Business Issues.</span>
             </h2>
             <p className="text-gray-400 text-base md:text-lg mb-10 leading-relaxed font-medium">
-              Let's talk about the specific business issues you're facing so we can build a 100% customized solution for you. We don't believe in generic fixes.
+              Let's talk about the specific growth issues you're facing so we can build 100% customized AI software and automation for you. No generic fixes, just 10x results.
             </p>
 
             <div className="space-y-6">
@@ -77,8 +77,8 @@ const BookingSection: React.FC = () => {
                   <svg className="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-sm">Deep Process Audit</h4>
-                  <p className="text-gray-500 text-xs mt-1">We'll identify the exact bottlenecks currently costing you time and revenue.</p>
+                  <h4 className="text-white font-bold text-sm">Revenue Opportunity Audit</h4>
+                  <p className="text-gray-500 text-xs mt-1">We'll identify the hidden revenue leaks that custom AI software can turn into 10x growth.</p>
                 </div>
               </div>
               
@@ -87,8 +87,8 @@ const BookingSection: React.FC = () => {
                   <svg className="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-sm">Your Custom Roadmap</h4>
-                  <p className="text-gray-500 text-xs mt-1">Leave the call with a clear plan on how AI will be engineered for your unique stack.</p>
+                  <h4 className="text-white font-bold text-sm">Your Software Roadmap</h4>
+                  <p className="text-gray-500 text-xs mt-1">Leave the call with a blueprint for a custom AI tool engineered specifically for your success.</p>
                 </div>
               </div>
 

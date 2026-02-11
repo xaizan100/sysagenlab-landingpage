@@ -6,14 +6,15 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev === 0 ? 1 : 0));
+      setActiveSlide((prev) => (prev + 1) % 3);
     }, 6000);
     return () => clearInterval(timer);
   }, []);
 
   const slides = [
     "Stop losing hours to manual lead follow-up and admin work. We build custom AI systems that book your meetings and manage your operations, so you can grow your revenue without hiring more staff.",
-    "Every automation solution we engineer is 100% customized to your specific business needs. We don't believe in one-size-fits-all; we build for your unique bottlenecks."
+    "Every automation solution we engineer is 100% customized to your specific business needs. We don't believe in one-size-fits-all; we build for your unique bottlenecks.",
+    "We develop proprietary, AI-driven software that doesn't just manage your business—it actively generates 10x revenue growth by identifying and capturing opportunities you're currently missing."
   ];
 
   return (
@@ -29,7 +30,7 @@ const Hero: React.FC = () => {
 
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-8 leading-[1.1] md:leading-[0.95] text-center">
           Scale Your Business With <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-purple-600">AI Automation.</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-purple-600">AI Software & Automation.</span>
         </h1>
 
         <div className="relative h-24 md:h-20 mb-12 overflow-hidden">

@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({ onPlaceholderClick }) => {
                <Logo />
             </div>
             <p className="text-gray-500 max-w-md text-lg leading-relaxed font-medium">
-              Engineering high-performance AI systems that transform manual operations into autonomous revenue engines.
+              Engineering high-performance AI systems and proprietary software that transform manual operations into 10x revenue growth engines.
             </p>
             <div className="mt-8 flex flex-col gap-3">
               <div className="px-4 py-2 w-fit rounded-lg bg-white/5 border border-white/10 text-xs text-gray-400">

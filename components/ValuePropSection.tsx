@@ -62,17 +62,17 @@ const ValuePropSection: React.FC = () => {
         </div>
       </div>
 
-      {/* THE SOLUTIONS - Emphasizing Customization */}
+      {/* THE SOLUTIONS - Emphasizing Customization & Software */}
       <div className="pt-24 border-t border-white/5">
         <div className="text-center mb-16 md:mb-20">
           <div className="inline-block bg-green-500/10 text-green-400 font-black px-5 py-2 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 border border-green-500/20">
             Tailored AI Engineering
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-[1.1]">
-            Systems built specifically <br className="hidden md:block" /> for your workflow.
+            Custom software built <br className="hidden md:block" /> to drive 10x revenue.
           </h2>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-medium">
-            We don't do 'off-the-shelf'. We audit your unique process and engineer custom AI infrastructure that fits your business like a glove.
+            We don't do 'off-the-shelf'. We audit your unique process and engineer custom AI-driven software and automation that fits your business like a glove.
           </p>
         </div>
 
@@ -89,8 +89,8 @@ const ValuePropSection: React.FC = () => {
               icon: "⚙️"
             },
             {
-              title: "Unique Service Automation",
-              desc: "We automate the heavy lifting of your specific delivery process, allowing you to scale without needing a massive management layer.",
+              title: "10x Revenue Software",
+              desc: "Beyond automation, we build proprietary AI-driven software tools that act as high-output revenue engines for your specific bottom line.",
               icon: "🚀"
             },
             {
@@ -128,26 +128,26 @@ const ValuePropSection: React.FC = () => {
             <h3 className="text-3xl font-bold text-white mb-8 tracking-tight text-left">The Difference is Design</h3>
             <div className="space-y-6">
               <div className="p-6 rounded-2xl bg-red-500/5 border border-red-500/10">
-                <p className="text-red-400 font-bold mb-3">One-Size-Fits-All Software</p>
+                <p className="text-red-400 font-bold mb-3">Generic SaaS Solutions</p>
                 <ul className="text-gray-500 text-sm space-y-3 font-medium">
                   <li>• You have to change your business to fit the tool</li>
-                  <li>• Generic responses that frustrate your customers</li>
-                  <li>• High learning curve and messy integration</li>
+                  <li>• Static features that don't scale with your revenue</li>
+                  <li>• Fragmented data and zero competitive edge</li>
                 </ul>
               </div>
               <div className="p-6 rounded-2xl bg-green-500/5 border border-green-500/10">
-                <p className="text-green-400 font-bold mb-3">SysAgen Custom Infrastructure</p>
+                <p className="text-green-400 font-bold mb-3">SysAgen Custom AI Software</p>
                 <ul className="text-gray-400 text-sm space-y-3 font-medium">
-                  <li>• Systems built around your existing success</li>
-                  <li>• Hyper-personalized AI that acts like your best staff</li>
-                  <li>• Fully managed transition and 24/7 optimization</li>
+                  <li>• Proprietary tools built for your unfair advantage</li>
+                  <li>• High-output AI software engineered for 10x ROI</li>
+                  <li>• Fully managed, scalable infrastructure</li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="flex flex-col justify-center items-center bg-black/40 backdrop-blur-sm rounded-3xl border border-white/10 p-10 text-center shadow-2xl">
-            <div className="text-6xl font-black text-white mb-2">3.5x</div>
-            <div className="text-[10px] text-purple-400 font-black uppercase tracking-[0.2em] mb-8">Average Profit Margin Increase</div>
+            <div className="text-6xl font-black text-white mb-2">10x</div>
+            <div className="text-[10px] text-purple-400 font-black uppercase tracking-[0.2em] mb-8">Targeted Revenue Growth</div>
             <a href="#contact" className="w-full bg-purple-600 text-white py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-purple-500 transition-all active:scale-95 shadow-lg shadow-purple-500/20">
               Book a Free Call
             </a>
