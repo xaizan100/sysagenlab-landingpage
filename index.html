@@ -10,8 +10,35 @@
     <meta name="title" content="SysAgen Lab - 10x Your Revenue With AI Driven Software & Automation Systems">
     <meta name="description" content="Stop chasing leads. SysAgen Lab builds AI-driven software and automation systems that generate 10x revenue and scale your business automatically.">
 
-    <!-- Favicon -->
+    <!-- SEO / Search Branding Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sysagenlab.co.uk/">
+    <meta property="og:title" content="SysAgen Lab - 10x Your Revenue With AI Software">
+    <meta property="og:description" content="Engineering high-performance AI systems that transform manual operations into 10x revenue growth engines.">
+    <!-- Using Data URI for OG Image as a fallback, though external hosts prefer absolute URLs -->
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Cpath d='M45 10l15-8 15 8-15 8z' fill='%23d8b4fe'/%3E%3Cpath d='M45 10v16l15 8V8z' fill='%236d28d9'/%3E%3Cpath d='M60 8v16l15-8V0z' fill='%238b5cf6'/%3E%3C/svg%3E">
+
+    <!-- Favicons & Brand Icons (Multi-format for Search Engines) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cstyle%3E.t%7Bfill:%23d8b4fe%7D.r%7Bfill:%238b5cf6%7D.l%7Bfill:%236d28d9%7D.s%7Bstroke:rgba(0,0,0,0.2);stroke-width:0.5;fill:none%7D%3C/style%3E%3Cg transform='translate(5,5)'%3E%3Csymbol id='c'%3E%3Cpath d='M0 0l15-8 15 8-15 8z' class='t'/%3E%3Cpath d='M0 0v16l15 8V8z' class='l'/%3E%3Cpath d='M15 8v16l15-8V0z' class='r'/%3E%3Cpath d='M0 0l15 8 15-8M15 8v16' class='s'/%3E%3C/symbol%3E%3Cuse href='%23c' x='45' y='10'/%3E%3Cuse href='%23c' x='30' y='18'/%3E%3Cuse href='%23c' x='30' y='34'/%3E%3Cuse href='%23c' x='45' y='42'/%3E%3Cuse href='%23c' x='45' y='58'/%3E%3Cuse href='%23c' x='30' y='66'/%3E%3C/g%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Cg transform='scale(0.8) translate(12,12)'%3E%3Cpath d='M45 10l15-8 15 8-15 8z' fill='%23d8b4fe'/%3E%3Cpath d='M45 10v16l15 8V8z' fill='%236d28d9'/%3E%3Cpath d='M60 8v16l15-8V0z' fill='%238b5cf6'/%3E%3C/g%3E%3C/svg%3E">
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M45 10l15-8 15 8-15 8z' fill='%23d8b4fe'/%3E%3Cpath d='M45 10v16l15 8V8z' fill='%236d28d9'/%3E%3Cpath d='M60 8v16l15-8V0z' fill='%238b5cf6'/%3E%3C/svg%3E">
+
+    <!-- Structured Data (JSON-LD) for Google Logo Recognition -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SysAgen Lab",
+      "url": "https://sysagenlab.co.uk",
+      "logo": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M45 10l15-8 15 8-15 8z' fill='%23d8b4fe'/%3E%3Cpath d='M45 10v16l15 8V8z' fill='%236d28d9'/%3E%3Cpath d='M60 8v16l15-8V0z' fill='%238b5cf6'/%3E%3C/svg%3E",
+      "description": "Custom AI-driven software and automation systems engineered for business growth.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "Hello@sysagenlab.co.uk",
+        "contactType": "customer service"
+      }
+    }
+    </script>
 
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +71,7 @@
       /* Performance Optimizations for Sections Below the Fold */
       .section-optimized {
         content-visibility: auto;
-        contain-intrinsic-size: 1px 1000px; /* Estimated height for placeholder */
+        contain-intrinsic-size: auto 1200px; 
       }
 
       /* Scroll lock only while loading */
@@ -70,25 +97,27 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        contain: content;
       }
 
       .logo-svg {
-        width: 180px;
-        height: 200px;
-        filter: drop-shadow(0 0 50px rgba(139, 92, 246, 0.4));
+        width: 140px;
+        height: 160px;
+        filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.3));
         animation: logo-pulse 2.5s ease-in-out infinite;
-        will-change: transform, opacity;
+        will-change: transform;
+        transform: translateZ(0);
       }
 
       .brand-text {
         margin-top: 32px;
         font-family: 'Inter', sans-serif;
-        font-size: 48px;
+        font-size: 40px;
         font-weight: 900;
         letter-spacing: -0.05em;
         color: white;
         text-transform: uppercase;
-        animation: fade-in-up 0.8s ease-out forwards;
+        animation: fade-in-up 0.5s ease-out forwards;
       }
 
       .brand-text span {
@@ -96,7 +125,7 @@
       }
 
       .progress-bar {
-        width: 300px;
+        width: 240px;
         height: 2px;
         background: rgba(255, 255, 255, 0.05);
         border-radius: 10px;
@@ -110,12 +139,12 @@
         height: 100%;
         width: 50%;
         background: linear-gradient(90deg, transparent, var(--brand-purple), transparent);
-        animation: progress-move 1.5s ease-in-out infinite;
+        animation: progress-move 1.2s ease-in-out infinite;
       }
 
       @keyframes logo-pulse {
         0%, 100% { transform: scale(1); opacity: 0.9; }
-        50% { transform: scale(1.05) translateY(-5px); opacity: 1; }
+        50% { transform: scale(1.03) translateY(-2px); opacity: 1; }
       }
 
       @keyframes progress-move {
@@ -124,7 +153,7 @@
       }
 
       @keyframes fade-in-up {
-        from { opacity: 0; transform: translateY(15px); }
+        from { opacity: 0; transform: translateY(10px); }
         to { opacity: 1; transform: translateY(0); }
       }
     </style>
@@ -154,7 +183,6 @@
               <path d="M0 8L15 0L30 8L15 16L0 8Z" fill="#d8b4fe"/>
               <path d="M0 8V24L15 32V16L0 8Z" fill="#6d28d9"/>
               <path d="M15 16V32L30 24V8L15 16Z" fill="#8b5cf6"/>
-              <path d="M0 8L15 16L30 8M15 16V32" stroke="rgba(0,0,0,0.15)" stroke-width="0.5" />
             </symbol>
             <use href="#loader-cube" x="50" y="10" width="30" height="32" />
             <use href="#loader-cube" x="35" y="18" width="30" height="32" />
