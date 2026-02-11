@@ -37,6 +37,7 @@ const Hero: React.FC = () => {
           {slides.map((text, index) => (
             <p
               key={index}
+              style={{ willChange: 'transform, opacity' }}
               className={`absolute inset-0 text-base md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-medium transition-all duration-700 ease-in-out transform ${
                 activeSlide === index 
                   ? 'translate-y-0 opacity-100' 

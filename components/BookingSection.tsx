@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 declare global {
   interface Window {
@@ -8,7 +8,31 @@ declare global {
 }
 
 const BookingSection: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px' } // Start loading slightly before it enters the viewport
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    // Only load the script and init if visible
     (function (C, A, L) {
       let p = function (a: any, ar: any) { a.q.push(ar); };
       let d = C.document;
@@ -55,10 +79,10 @@ const BookingSection: React.FC = () => {
       hideEventTypeDetails: false, 
       layout: "month_view" 
     });
-  }, []);
+  }, [isVisible]);
 
   return (
-    <section className="py-24 px-4 max-w-7xl mx-auto">
+    <section ref={containerRef} className="py-24 px-4 max-w-7xl mx-auto section-optimized">
       <div className="bg-[#111] border border-white/10 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-2xl">
         <div className="flex flex-col lg:flex-row">
           {/* Left Side: Personal Conversion Copy */}
@@ -104,6 +128,11 @@ const BookingSection: React.FC = () => {
 
           {/* Right Side: Cal.com Embed */}
           <div className="lg:w-2/3 min-h-[500px] md:min-h-[600px] relative bg-[#0a0a0a]">
+            {!isVisible && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-10 h-10 border-2 border-purple-500/30 border-t-purple-500 rounded-full animate-spin"></div>
+              </div>
+            )}
             <div 
               id="my-cal-inline-30min" 
               className="w-full h-full min-h-[500px] md:min-h-[600px] overflow-auto scrollbar-hide"

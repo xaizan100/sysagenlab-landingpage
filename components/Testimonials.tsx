@@ -28,7 +28,7 @@ const reviews: Testimonial[] = [
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="py-24 px-4 bg-black">
+    <section className="py-24 px-4 bg-black section-optimized">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter">Verified Business Results</h2>
@@ -43,7 +43,13 @@ const Testimonials: React.FC = () => {
                   "{review.text}"
                 </p>
                 <div className="flex items-center gap-4">
-                  <img src={review.avatar} alt={review.name} className="w-10 h-10 rounded-full grayscale" />
+                  <img 
+                    src={review.avatar} 
+                    alt={review.name} 
+                    loading="lazy"
+                    decoding="async"
+                    className="w-10 h-10 rounded-full grayscale" 
+                  />
                   <div>
                     <h4 className="font-bold text-white text-sm">{review.name}</h4>
                     <p className="text-xs text-purple-400 font-bold uppercase tracking-tighter">{review.handle}</p>

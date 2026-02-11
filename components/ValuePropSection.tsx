@@ -3,7 +3,7 @@ import React from 'react';
 
 const ValuePropSection: React.FC = () => {
   return (
-    <section className="py-24 px-6 max-w-7xl mx-auto">
+    <section className="py-24 px-6 max-w-7xl mx-auto section-optimized">
       {/* THE PROBLEMS - Personal and Specific */}
       <div className="mb-40">
         <div className="text-center mb-16 md:mb-20">
