@@ -4,67 +4,67 @@ import React, { useMemo } from 'react';
 const ValuePropSection: React.FC = () => {
   const problems = useMemo(() => [
     {
-      title: "Your Leads Are Cooling",
-      desc: "You're spending money to get people interested, but if you don't reply in seconds, you're throwing that investment away. We fix your response time instantly.",
+      title: "Slow Response Times",
+      desc: "Patient enquiries cool rapidly. If you don't respond within minutes, they've already called the next clinic on Google. We eliminate this leak.",
       icon: "📩"
     },
     {
-      title: "You're Trapped in Admin",
-      desc: "You didn't start your business to update CRMs. You're losing hours every week that should be spent on high-level direction and growth.",
-      icon: "⌨️"
+      title: "Missed Procedure Calls",
+      desc: "Your front-of-house is busy assisting patients. Every missed call is a potential high-value treatment plan lost to a competitor.",
+      icon: "📞"
     },
     {
-      title: "Your Payroll is Bloated",
-      desc: "You feel like you need more people just to keep up, but more staff means more management for you. There is a more efficient way to scale your output.",
-      icon: "📉"
+      title: "No Structured Follow-Up",
+      desc: "Leads that don't book immediately are often forgotten. Without a multi-touch follow-up system, your cost-per-acquisition skyrockets.",
+      icon: "🔄"
     },
     {
-      title: "Wasted Sales Energy",
-      desc: "You're taking calls with people who aren't ready to buy. Your calendar should only have qualified buyers who are a perfect match for your specific service.",
-      icon: "🛑"
+      title: "No Deposit Enforcement",
+      desc: "No-shows and late cancellations drain your clinic's profitability. We install automated deposit systems to protect your practitioners' time.",
+      icon: "💳"
     },
     {
-      title: "Your Content is Stalling",
-      desc: "You know you need to be visible, but creating assets takes too much of your focus. We build custom models that speak in your specific brand voice.",
-      icon: "✍️"
-    },
-    {
-      title: "Flying Blind",
-      desc: "You don't have a clear, real-time view of your ROI because your data is scattered. We build a unified brain for your specific business metrics.",
+      title: "Zero Conversion Visibility",
+      desc: "If you can't see exactly which marketing channels are producing booked treatments, you're guessing with your growth budget.",
       icon: "📊"
+    },
+    {
+      title: "Dormant Patient Databases",
+      desc: "Your existing patients are your most valuable asset. Most clinics leave thousands in revenue on the table by failing to reactivate them.",
+      icon: "💤"
     }
   ], []);
 
   const solutions = useMemo(() => [
     {
-      title: "Your Custom AI Receptionist",
-      desc: "A bot trained specifically on your product, your pricing, and your tone of voice. It nurtures your leads exactly the way you would.",
-      icon: "🤖"
+      title: "Demand Creation Systems",
+      desc: "We don't just 'run ads'. We build predictable demand engines that attract high-intent patients looking for specific specialist treatments.",
+      icon: "🧲"
     },
     {
-      title: "Workflow Architecture",
-      desc: "We don't just 'connect' apps. We architect a custom flow that mirrors your ideal operations, removing every manual click you currently make.",
-      icon: "⚙️"
+      title: "Lead Capture & Speed-to-Lead",
+      desc: "Instant, professional responses to every enquiry, 24/7. We ensure no patient is left waiting, regardless of when they reach out.",
+      icon: "⚡"
     },
     {
-      title: "10x Revenue Software",
-      desc: "Beyond automation, we build proprietary AI-driven software tools that act as high-output revenue engines for your specific bottom line.",
-      icon: "🚀"
-    },
-    {
-      title: "ICP Vetting Agents",
-      desc: "Custom AI filters that check every prospect against your specific ICP. No more tire-kickers on your calendar, ever again.",
-      icon: "🛡️"
-    },
-    {
-      title: "Personalized Outreach Engine",
-      desc: "Outreach that doesn't look like spam. Our models use your specific case studies and results to build trust automatically at scale.",
-      icon: "💡"
-    },
-    {
-      title: "Your Proprietary Dashboard",
-      desc: "A custom-built data command center that gives you the exact insights you need to make decisions for your specific business.",
+      title: "Conversion & Follow-Up",
+      desc: "Automated, ethical nurture sequences that educate patients and build trust, leading to higher consultation booking rates.",
       icon: "📈"
+    },
+    {
+      title: "Retention & Reactivation",
+      desc: "Systems that keep your clinic top-of-mind and automatically reach out to past patients for follow-up treatments and maintenance.",
+      icon: "🔁"
+    },
+    {
+      title: "Reporting & Revenue Visibility",
+      desc: "A clear, real-time dashboard showing your exact ROI, conversion rates, and revenue pipeline. No more guesswork.",
+      icon: "🖥️"
+    },
+    {
+      title: "Infrastructure Management",
+      desc: "We install and manage the entire revenue system, ensuring your clinic's growth is supported by a robust, scalable foundation.",
+      icon: "🏗️"
     }
   ], []);
 
@@ -76,17 +76,17 @@ const ValuePropSection: React.FC = () => {
 
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto section-optimized">
-      {/* THE PROBLEMS - Personal and Specific */}
+      {/* THE PROBLEMS - The Hidden Revenue Leak */}
       <div className="mb-40">
         <div className="text-center mb-16 md:mb-20">
           <div className="inline-block bg-red-500/10 text-red-400 font-black px-5 py-2 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 border border-red-500/20">
-            Your Specific Growth Blockers
+            The Hidden Revenue Leak
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-[1.1]">
-            Is your business <br className="hidden md:block" /> actually working for you?
+            Is your clinic losing <br className="hidden md:block" /> revenue to poor infrastructure?
           </h2>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-medium">
-            You are likely feeling the friction of manual work every single day. We don't provide generic software; we solve the specific issues that keep you awake at night.
+            Most clinics don't have a lead problem; they have a system problem. We identify and fix the structural gaps that are costing you patients every single day.
           </p>
         </div>
 
@@ -107,17 +107,17 @@ const ValuePropSection: React.FC = () => {
         </div>
       </div>
 
-      {/* THE SOLUTIONS - Emphasizing Customization & Software */}
+      {/* THE SOLUTIONS - Revenue Infrastructure */}
       <div className="pt-24 border-t border-white/5">
         <div className="text-center mb-16 md:mb-20">
           <div className="inline-block bg-green-500/10 text-green-400 font-black px-5 py-2 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 border border-green-500/20">
-            Tailored AI Engineering
+            Our Approach
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-[1.1]">
-            Custom software built <br className="hidden md:block" /> to drive 10x revenue.
+            Revenue Infrastructure <br className="hidden md:block" /> built for modern clinics.
           </h2>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-medium">
-            We don't do 'off-the-shelf'. We audit your unique process and engineer custom AI-driven software and automation that fits your business like a glove.
+            We install end-to-end systems that manage the entire patient journey, from initial interest to long-term retention and advocacy.
           </p>
         </div>
 
@@ -143,31 +143,31 @@ const ValuePropSection: React.FC = () => {
         <div className="absolute top-0 right-0 w-64 h-64 opacity-20 pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%)' }}></div>
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div>
-            <h3 className="text-3xl font-bold text-white mb-8 tracking-tight text-left">The Difference is Design</h3>
+            <h3 className="text-3xl font-bold text-white mb-8 tracking-tight text-left">Strategic Infrastructure</h3>
             <div className="space-y-6">
               <div className="p-6 rounded-2xl bg-red-500/5 border border-red-500/10">
-                <p className="text-red-400 font-bold mb-3">Generic SaaS Solutions</p>
+                <p className="text-red-400 font-bold mb-3">Traditional Marketing Agencies</p>
                 <ul className="text-gray-500 text-sm space-y-3 font-medium">
-                  <li>• You have to change your business to fit the tool</li>
-                  <li>• Static features that don't scale with your revenue</li>
-                  <li>• Fragmented data and zero competitive edge</li>
+                  <li>• Focus solely on lead volume, not conversion</li>
+                  <li>• No integration with your clinic's operations</li>
+                  <li>• Fragmented reporting and zero accountability</li>
                 </ul>
               </div>
               <div className="p-6 rounded-2xl bg-green-500/5 border border-green-500/10">
-                <p className="text-green-400 font-bold mb-3">SysAgen Custom AI Software</p>
+                <p className="text-green-400 font-bold mb-3">SysAgen Revenue Systems</p>
                 <ul className="text-gray-400 text-sm space-y-3 font-medium">
-                  <li>• Proprietary tools built for your unfair advantage</li>
-                  <li>• High-output AI software engineered for 10x ROI</li>
-                  <li>• Fully managed, scalable infrastructure</li>
+                  <li>• End-to-end systems built for patient conversion</li>
+                  <li>• Seamless integration with your existing team</li>
+                  <li>• Full visibility on revenue and ROI metrics</li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="flex flex-col justify-center items-center bg-black/40 backdrop-blur-sm rounded-3xl border border-white/10 p-10 text-center shadow-2xl">
-            <div className="text-6xl font-black text-white mb-2">10x</div>
-            <div className="text-[10px] text-purple-400 font-black uppercase tracking-[0.2em] mb-8">Targeted Revenue Growth</div>
+            <div className="text-6xl font-black text-white mb-2">ROI</div>
+            <div className="text-[10px] text-purple-400 font-black uppercase tracking-[0.2em] mb-8">Predictable Growth Engine</div>
             <a href="#contact" className="w-full bg-purple-600 text-white py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-purple-500 transition-all active:scale-95 shadow-lg shadow-purple-500/20">
-              Book a Free Call
+              Book a Revenue Audit
             </a>
           </div>
         </div>

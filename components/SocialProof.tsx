@@ -6,7 +6,7 @@ const SocialProof: React.FC = () => {
     <section className="py-20 px-4 bg-gradient-to-b from-transparent to-black/20">
       <div className="max-w-6xl mx-auto text-center">
         <h3 className="text-gray-500 text-sm font-bold uppercase tracking-[0.2em] mb-10">
-          Powering high-performance businesses worldwide
+          Powering high-performance clinics and specialist practices
         </h3>
         
         <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">

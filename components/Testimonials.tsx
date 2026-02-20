@@ -4,23 +4,23 @@ import { Testimonial } from '../types';
 
 const reviews: Testimonial[] = [
   {
-    name: "Alex Rivera",
-    handle: "CEO, Rivera Media",
-    text: "SysAgen Lab automated our lead triage. We went from a 4-hour response time to 30 seconds. Our conversion rate increased by 40% in two months.",
+    name: "Dr. James Aris",
+    handle: "Clinical Director, Aris Aesthetics",
+    text: "SysAgen Lab installed our lead triage system. We went from a 4-hour response time to 30 seconds. Our consultation booking rate increased by 40% in two months.",
     avatar: "https://picsum.photos/100/100?random=1",
     rating: 5
   },
   {
-    name: "Sarah Chen",
-    handle: "Founder, SC Designs",
-    text: "They integrated our CRM with our project management tools. We saved 15 hours of admin work per week. The system paid for itself in 3 weeks.",
+    name: "Sarah Jenkins",
+    handle: "Owner, The Wellness Collective",
+    text: "They integrated our booking system with a structured follow-up engine. We saved 15 hours of admin work per week and eliminated no-shows with deposit enforcement.",
     avatar: "https://picsum.photos/100/100?random=2",
     rating: 5
   },
   {
     name: "Marcus Thorne",
-    handle: "Ops Director, Thorne Ltd",
-    text: "The AI outreach bot they built is booking more qualified meetings than our full-time SDR did last year. Highly efficient and cost-effective.",
+    handle: "Director, Thorne Specialist Clinic",
+    text: "The revenue infrastructure they built is capturing more high-value treatment plans than our previous manual processes ever could. Highly professional and strategic.",
     avatar: "https://picsum.photos/100/100?random=3",
     rating: 5
   }

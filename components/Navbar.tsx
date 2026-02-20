@@ -53,14 +53,15 @@ const Navbar: React.FC = () => {
           ${mobileMenuOpen ? 'flex flex-col mt-4 pb-4 animate-fade-in' : 'hidden md:flex'} 
           md:flex-row md:items-center md:mt-0 md:pb-0 gap-6 lg:gap-8 transition-all duration-300
         `}>
-          <a href="#features" onClick={closeMenu} className="text-[13px] md:text-sm font-bold text-gray-400 hover:text-white transition-colors">Solutions</a>
+          <a href="#infrastructure" onClick={closeMenu} className="text-[13px] md:text-sm font-bold text-gray-400 hover:text-white transition-colors">Infrastructure</a>
+          <a href="#diagnosis" onClick={closeMenu} className="text-[13px] md:text-sm font-bold text-gray-400 hover:text-white transition-colors">Diagnosis</a>
           <a href="#testimonials" onClick={closeMenu} className="text-[13px] md:text-sm font-bold text-gray-400 hover:text-white transition-colors">Results</a>
           <a 
             href="#contact" 
             onClick={closeMenu}
             className="bg-purple-600 text-white px-4 py-2 md:px-5 md:py-2 rounded-xl text-[12px] md:text-sm font-bold hover:bg-purple-500 transition-all text-center shadow-[0_0_20px_rgba(139,92,246,0.3)] mt-4 md:mt-0"
           >
-            Book a Free Call
+            Book a Revenue Audit
           </a>
         </div>
       </nav>

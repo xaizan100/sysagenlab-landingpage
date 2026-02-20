@@ -4,6 +4,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SocialProof from './components/SocialProof';
 import ValuePropSection from './components/ValuePropSection';
+import ClinicTypes from './components/ClinicTypes';
+import MarketingFailure from './components/MarketingFailure';
+import FinancialFraming from './components/FinancialFraming';
+import Qualification from './components/Qualification';
 import Testimonials from './components/Testimonials';
 import BookingSection from './components/BookingSection';
 import Footer from './components/Footer';
@@ -41,12 +45,18 @@ const App: React.FC = () => {
             <Hero />
           </div>
           <SocialProof />
-          <div id="features" className="scroll-mt-32">
+          <div id="infrastructure" className="scroll-mt-32">
             <ValuePropSection />
           </div>
+          <div id="diagnosis" className="scroll-mt-32">
+            <ClinicTypes />
+          </div>
+          <MarketingFailure />
+          <FinancialFraming />
           <div id="testimonials" className="scroll-mt-32">
             <Testimonials />
           </div>
+          <Qualification />
           <div id="contact" className="scroll-mt-32">
             <BookingSection />
           </div>
