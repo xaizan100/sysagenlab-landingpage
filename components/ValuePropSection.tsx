@@ -63,11 +63,11 @@ const ValuePropSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {problems.map((item, idx) => (
             <div 
               key={idx} 
-              className="bg-white border border-brand-border p-12 rounded-[20px] shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
+              className="bg-white border border-brand-border p-8 md:p-12 rounded-[20px] shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
               style={cardStyle}
             >
               <div className="w-12 h-12 flex items-center justify-center border border-brand-border rounded-lg mb-10 group-hover:border-brand-black transition-colors">
@@ -99,11 +99,11 @@ const ValuePropSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {solutions.map((item, idx) => (
             <div 
               key={idx} 
-              className="bg-white border border-brand-border p-12 rounded-[20px] shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
+              className="bg-white border border-brand-border p-8 md:p-12 rounded-[20px] shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
               style={cardStyle}
             >
               <div className="w-12 h-12 flex items-center justify-center border border-brand-border rounded-lg mb-10 group-hover:border-brand-black transition-colors">
@@ -119,8 +119,8 @@ const ValuePropSection: React.FC = () => {
       </div>
 
       {/* ROI SUMMARY */}
-      <div className="mt-48 bg-white border border-brand-border rounded-[24px] p-10 md:p-20 shadow-premium relative overflow-hidden">
-        <div className="grid md:grid-cols-2 gap-20 items-center">
+      <div className="mt-48 bg-white border border-brand-border rounded-[24px] p-8 md:p-20 shadow-premium relative overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
             <h3 className="text-4xl font-bold text-brand-black mb-10 tracking-tighter uppercase">We Don’t Run Ads. <br /> We Build Revenue Systems.</h3>
             <div className="space-y-10">

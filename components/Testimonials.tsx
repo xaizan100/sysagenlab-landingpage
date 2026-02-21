@@ -56,7 +56,9 @@ const Testimonials: React.FC = () => {
                   alt={review.name} 
                   loading="lazy"
                   decoding="async"
-                  className="w-14 h-14 rounded-none grayscale border border-brand-border group-hover:grayscale-0 transition-all" 
+                  width="56"
+                  height="56"
+                  className="w-14 h-14 rounded-none grayscale border border-brand-border group-hover:grayscale-0 transition-all object-cover" 
                 />
                 <div>
                   <h4 className="font-bold text-brand-black text-sm uppercase tracking-tight">{review.name}</h4>

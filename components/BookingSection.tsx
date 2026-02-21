@@ -86,7 +86,7 @@ const BookingSection: React.FC = () => {
       <div className="bg-white border border-brand-border rounded-[24px] overflow-hidden shadow-premium">
         <div className="flex flex-col lg:flex-row">
           {/* Left Side: Personal Conversion Copy */}
-          <div className="lg:w-1/3 p-10 md:p-16 lg:p-20 bg-brand-surface border-b lg:border-b-0 lg:border-r border-brand-border">
+          <div className="lg:w-1/3 p-8 md:p-16 lg:p-20 bg-brand-surface border-b lg:border-b-0 lg:border-r border-brand-border">
             <div className="flex items-start gap-6 mb-12">
               <div className="w-1 h-20 bg-brand-black"></div>
               <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tighter leading-tight uppercase">

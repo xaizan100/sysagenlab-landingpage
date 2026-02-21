@@ -13,10 +13,10 @@ const Footer: React.FC<FooterProps> = ({ onPlaceholderClick }) => {
   };
 
   return (
-    <footer className="bg-white border-t border-brand-light pt-24 pb-12 px-6">
+    <footer className="bg-white border-t border-brand-border pt-24 pb-12 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+          <div className="col-span-1 sm:col-span-2">
              <div className="mb-8">
                 <Logo />
             </div>
@@ -24,35 +24,35 @@ const Footer: React.FC<FooterProps> = ({ onPlaceholderClick }) => {
               Engineering high-performance revenue infrastructure and predictable patient acquisition systems for modern private clinics.
             </p>
             <div className="mt-12 flex flex-col gap-4">
-              <div className="text-xs text-brand-grey uppercase tracking-widest font-bold">
+              <div className="text-[10px] md:text-xs text-brand-grey uppercase tracking-[0.2em] font-bold">
                 Support: <a href="mailto:Hello@sysagenlab.co.uk" className="text-brand-black hover:opacity-60 transition-opacity ml-2">Hello@sysagenlab.co.uk</a>
               </div>
-              <div className="text-xs text-brand-grey uppercase tracking-widest font-bold">
+              <div className="text-[10px] md:text-xs text-brand-grey uppercase tracking-[0.2em] font-bold">
                 Region: <span className="text-brand-black ml-2">United Kingdom / Global</span>
               </div>
             </div>
           </div>
           
           <div>
-            <h4 className="text-brand-black font-bold mb-8 text-[10px] uppercase tracking-[0.3em]">Ecosystem</h4>
+            <h4 className="text-brand-black font-bold mb-8 text-[10px] uppercase tracking-[0.4em]">Ecosystem</h4>
             <ul className="space-y-4 text-brand-grey font-light text-sm">
-              <li><a href="#infrastructure" className="hover:text-brand-black transition-colors uppercase tracking-widest text-[11px]">Infrastructure</a></li>
-              <li><a href="#diagnosis" className="hover:text-brand-black transition-colors uppercase tracking-widest text-[11px]">Diagnosis</a></li>
-              <li><a href="#testimonials" className="hover:text-brand-black transition-colors uppercase tracking-widest text-[11px]">Results</a></li>
+              <li><a href="#infrastructure" className="hover:text-brand-black transition-colors uppercase tracking-[0.2em] text-[10px]">Infrastructure</a></li>
+              <li><a href="#diagnosis" className="hover:text-brand-black transition-colors uppercase tracking-[0.2em] text-[10px]">Diagnosis</a></li>
+              <li><a href="#testimonials" className="hover:text-brand-black transition-colors uppercase tracking-[0.2em] text-[10px]">Results</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-brand-black font-bold mb-8 text-[10px] uppercase tracking-[0.3em]">Company</h4>
+            <h4 className="text-brand-black font-bold mb-8 text-[10px] uppercase tracking-[0.4em]">Company</h4>
             <ul className="space-y-4 text-brand-grey font-light text-sm">
-              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Privacy Policy')} className="hover:text-brand-black transition-colors uppercase tracking-widest text-[11px]">Privacy</a></li>
-              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Terms of Service')} className="hover:text-brand-black transition-colors uppercase tracking-widest text-[11px]">Terms</a></li>
+              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Privacy Policy')} className="hover:text-brand-black transition-colors uppercase tracking-[0.2em] text-[10px]">Privacy</a></li>
+              <li><a href="#" onClick={(e) => handlePlaceholder(e, 'Terms of Service')} className="hover:text-brand-black transition-colors uppercase tracking-[0.2em] text-[10px]">Terms</a></li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-12 border-t border-brand-light flex flex-col sm:flex-row justify-between items-center gap-8">
-          <p className="text-[10px] text-brand-grey font-bold text-center sm:text-left tracking-[0.2em] uppercase">
+        <div className="pt-12 border-t border-brand-border flex flex-col sm:flex-row justify-between items-center gap-8">
+          <p className="text-[10px] text-brand-grey font-bold text-center sm:text-left tracking-[0.3em] uppercase">
             © 2025 SysAgen Lab Ltd. <br className="sm:hidden" />
             Strategic Revenue Infrastructure.
           </p>

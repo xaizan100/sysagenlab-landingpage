@@ -43,11 +43,11 @@ const ClinicTypes: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
         {types.map((type) => (
           <div 
             key={type.id}
-            className="bg-white border border-brand-border rounded-[20px] p-12 flex flex-col h-full shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
+            className="bg-white border border-brand-border rounded-[20px] p-8 md:p-12 flex flex-col h-full shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
           >
             <h3 className="text-xl font-bold mb-12 tracking-tight text-brand-black uppercase">
               {type.title}

@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   }, []);
 
   const slides = [
-    "We build the demand generation and conversion infrastructure required for predictable growth.",
+    "We build the demand generation and conversion infrastructure required for predictable clinic growth.",
     "Stop relying on referrals. Install a professional system for patient acquisition and retention.",
     "From market demand to booked treatment — we engineer the entire revenue journey."
   ];

@@ -4,8 +4,8 @@ import React from 'react';
 const FinancialFraming: React.FC = () => {
   return (
     <section className="max-w-7xl mx-auto section-optimized">
-      <div className="bg-white border border-brand-border rounded-[24px] p-10 md:p-20 shadow-premium relative overflow-hidden">
-        <div className="grid lg:grid-cols-2 gap-24 items-center relative z-10">
+      <div className="bg-white border border-brand-border rounded-[24px] p-8 md:p-20 shadow-premium relative overflow-hidden">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center relative z-10">
           <div>
             <div className="text-left mb-16 flex items-start gap-6">
               <div className="w-1 h-24 bg-brand-black hidden md:block"></div>

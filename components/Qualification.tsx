@@ -21,7 +21,7 @@ const Qualification: React.FC = () => {
 
       <div className="grid md:grid-cols-2 gap-12">
         {/* WHO THIS IS FOR */}
-        <div className="bg-white border border-brand-border rounded-[20px] p-12 md:p-16 shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group">
+        <div className="bg-white border border-brand-border rounded-[20px] p-8 md:p-16 shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group">
           <div className="inline-block bg-brand-surface text-brand-grey font-bold px-4 py-1.5 text-[10px] uppercase tracking-[0.3em] mb-10 border border-brand-border">
             Ideal Partner
           </div>
@@ -42,7 +42,7 @@ const Qualification: React.FC = () => {
         </div>
 
         {/* WHO THIS IS NOT FOR */}
-        <div className="bg-white border border-brand-border rounded-[20px] p-12 md:p-16 shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group">
+        <div className="bg-white border border-brand-border rounded-[20px] p-8 md:p-16 shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group">
           <div className="inline-block bg-brand-surface text-brand-grey font-bold px-4 py-1.5 text-[10px] uppercase tracking-[0.3em] mb-10 border border-brand-border">
             Not a Fit
           </div>
