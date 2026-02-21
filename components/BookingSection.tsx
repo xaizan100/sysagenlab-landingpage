@@ -82,43 +82,43 @@ const BookingSection: React.FC = () => {
   }, [isVisible]);
 
   return (
-    <section ref={containerRef} className="py-24 px-4 max-w-7xl mx-auto section-optimized">
-      <div className="bg-[#111] border border-white/10 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-2xl">
+    <section ref={containerRef} className="max-w-7xl mx-auto section-optimized">
+      <div className="bg-white border border-brand-border rounded-[24px] overflow-hidden shadow-premium">
         <div className="flex flex-col lg:flex-row">
           {/* Left Side: Personal Conversion Copy */}
-          <div className="lg:w-1/3 p-8 md:p-12 lg:p-16 bg-gradient-to-br from-purple-900/10 to-transparent border-b lg:border-b-0 lg:border-r border-white/10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tighter leading-tight">
-              Book Your <br />
-              <span className="text-purple-500">Revenue Audit.</span>
-            </h2>
-            <p className="text-gray-400 text-base md:text-lg mb-10 leading-relaxed font-medium">
+          <div className="lg:w-1/3 p-10 md:p-16 lg:p-20 bg-brand-surface border-b lg:border-b-0 lg:border-r border-brand-border">
+            <div className="flex items-start gap-6 mb-12">
+              <div className="w-1 h-20 bg-brand-black"></div>
+              <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tighter leading-tight uppercase">
+                Book Your <br />
+                Revenue Audit.
+              </h2>
+            </div>
+            
+            <p className="text-brand-grey text-lg mb-12 leading-relaxed font-light">
               This is a diagnostic call, not a sales pitch. We will audit your current patient acquisition and conversion systems to identify exactly where your revenue is leaking.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg className="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
-                </div>
+            <div className="space-y-10">
+              <div className="flex items-start gap-6 group">
+                <div className="w-2 h-2 rounded-none bg-brand-black flex-shrink-0 mt-2 group-hover:scale-150 transition-transform"></div>
                 <div>
-                  <h4 className="text-white font-bold text-sm">Diagnostic Approach</h4>
-                  <p className="text-gray-500 text-xs mt-1">If we don't believe we can create a measurable impact for your clinic, we will say so immediately.</p>
+                  <h4 className="text-brand-black font-bold text-sm uppercase tracking-tight">Diagnostic Approach</h4>
+                  <p className="text-brand-grey text-xs mt-2 font-light leading-relaxed">If we don't believe we can create a measurable impact for your clinic, we will say so immediately.</p>
                 </div>
               </div>
               
-              <div className="flex items-start gap-4">
-                <div className="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg className="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                </div>
+              <div className="flex items-start gap-6 group">
+                <div className="w-2 h-2 rounded-none bg-brand-black flex-shrink-0 mt-2 group-hover:scale-150 transition-transform"></div>
                 <div>
-                  <h4 className="text-white font-bold text-sm">Infrastructure Blueprint</h4>
-                  <p className="text-gray-500 text-xs mt-1">Leave the call with a clear understanding of the systems required to scale your clinic's revenue.</p>
+                  <h4 className="text-brand-black font-bold text-sm uppercase tracking-tight">Infrastructure Blueprint</h4>
+                  <p className="text-brand-grey text-xs mt-2 font-light leading-relaxed">Leave the call with a clear understanding of the systems required to scale your clinic's revenue.</p>
                 </div>
               </div>
 
-              <div className="pt-8 border-t border-white/5">
-                <p className="text-[10px] text-gray-500 font-black uppercase tracking-widest mb-3">Direct Support</p>
-                <a href="mailto:Hello@sysagenlab.co.uk" className="text-white font-bold hover:text-purple-400 transition-colors flex items-center gap-2 group text-sm md:text-base">
+              <div className="pt-12 border-t border-brand-border">
+                <p className="text-[10px] text-brand-grey font-bold uppercase tracking-[0.3em] mb-4">Direct Support</p>
+                <a href="mailto:Hello@sysagenlab.co.uk" className="text-brand-black font-bold hover:opacity-60 transition-opacity flex items-center gap-3 group text-sm md:text-base uppercase tracking-widest">
                   Hello@sysagenlab.co.uk
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </a>
@@ -127,19 +127,16 @@ const BookingSection: React.FC = () => {
           </div>
 
           {/* Right Side: Cal.com Embed */}
-          <div className="lg:w-2/3 min-h-[500px] md:min-h-[600px] relative bg-[#0a0a0a]">
+          <div className="lg:w-2/3 min-h-[500px] md:min-h-[600px] relative bg-white">
             {!isVisible && (
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-10 h-10 border-2 border-purple-500/30 border-t-purple-500 rounded-full animate-spin"></div>
+                <div className="w-10 h-10 border-2 border-brand-border border-t-brand-black rounded-none animate-spin"></div>
               </div>
             )}
             <div 
               id="my-cal-inline-30min" 
               className="w-full h-full min-h-[500px] md:min-h-[600px] overflow-auto scrollbar-hide"
             ></div>
-            
-            <div className="absolute top-0 right-0 w-32 h-32 bg-purple-600/5 blur-[60px] pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-600/5 blur-[60px] pointer-events-none"></div>
           </div>
         </div>
       </div>

@@ -21,38 +21,50 @@ const MarketingFailure: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 px-6 max-w-7xl mx-auto section-optimized bg-gradient-to-b from-transparent to-[#050505] rounded-[3rem]">
-      <div className="text-center mb-16 md:mb-20">
-        <div className="inline-block bg-purple-500/10 text-purple-400 font-black px-5 py-2 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 border border-purple-500/20">
-          The Industry Gap
+    <section className="max-w-7xl mx-auto section-optimized">
+      <div className="text-left mb-24 flex items-start gap-8">
+        <div className="w-1 h-32 bg-brand-black hidden md:block"></div>
+        <div>
+          <div className="inline-block bg-white text-brand-grey font-bold px-5 py-2 text-[10px] uppercase tracking-[0.4em] mb-8 border border-brand-border shadow-sm">
+            The Industry Gap
+          </div>
+          <h2 className="text-5xl md:text-7xl font-bold text-brand-black mb-8 tracking-tighter leading-[1] uppercase">
+            Why most marketing <br className="hidden md:block" /> fails private clinics.
+          </h2>
+          <p className="text-brand-grey text-lg md:text-xl max-w-3xl font-light leading-relaxed">
+            The gap isn't in the marketing; it's in the infrastructure. We don't just provide services; we build end-to-end revenue systems.
+          </p>
         </div>
-        <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-[1.1]">
-          Why most marketing <br className="hidden md:block" /> fails private clinics.
-        </h2>
-        <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-medium">
-          The gap isn't in the marketing; it's in the infrastructure. We don't just provide services; we build end-to-end revenue systems.
-        </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-32">
         {points.map((point, idx) => (
-          <div key={idx} className="relative">
-            <div className="text-4xl mb-6">{point.icon}</div>
-            <h3 className="text-xl font-bold text-white mb-4 tracking-tight">{point.title}</h3>
-            <p className="text-gray-500 leading-relaxed text-sm font-medium">
+          <div 
+            key={idx} 
+            className="bg-white border border-brand-border p-12 rounded-[20px] shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center border border-brand-border rounded-lg mb-10 group-hover:border-brand-black transition-colors">
+              <span className="text-2xl grayscale opacity-60 group-hover:opacity-100 transition-opacity">{point.icon}</span>
+            </div>
+            <h3 className="text-lg font-bold text-brand-black mb-4 tracking-tight uppercase">{point.title}</h3>
+            <p className="text-brand-grey leading-relaxed text-sm font-light">
               {point.desc}
             </p>
-            {idx < 2 && (
-              <div className="hidden md:block absolute top-1/2 -right-6 w-12 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
-            )}
           </div>
         ))}
       </div>
 
-      <div className="mt-20 p-8 md:p-12 bg-white/5 border border-white/10 rounded-[2rem] text-center">
-        <p className="text-white text-lg md:text-xl font-bold tracking-tight">
-          We position ourselves as <span className="text-purple-400">Infrastructure Builders</span>. We install the predictable systems that allow your clinic to scale with total control.
-        </p>
+      <div className="bg-white border border-brand-border rounded-[24px] p-12 md:p-24 text-center shadow-premium relative overflow-hidden">
+        <div className="max-w-4xl mx-auto relative z-10">
+          <p className="text-brand-black text-2xl md:text-3xl font-bold tracking-tighter uppercase leading-tight mb-12">
+            We position ourselves as <span className="text-brand-grey">Infrastructure Builders</span>. <br className="hidden md:block" /> We install the predictable systems that allow your clinic to scale with total control.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-12">
+            <a href="#contact" className="w-full sm:w-auto bg-brand-black text-white px-14 py-6 rounded-none font-bold text-sm uppercase tracking-[0.2em] hover:bg-brand-grey hover:scale-[1.02] transition-all shadow-premium active:scale-95">
+              Book a Revenue Audit
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

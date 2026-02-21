@@ -3,28 +3,28 @@ import React from 'react';
 
 const SocialProof: React.FC = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-transparent to-black/20">
+    <section className="py-24 px-4 bg-white border-y border-brand-light">
       <div className="max-w-6xl mx-auto text-center">
-        <h3 className="text-gray-500 text-sm font-bold uppercase tracking-[0.2em] mb-10">
-          Powering high-performance clinics and specialist practices
+        <h3 className="text-brand-grey text-[10px] font-bold uppercase tracking-[0.3em] mb-16">
+          Strategic partners to high-performance clinics
         </h3>
         
-        <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-          {/* Mock Logos */}
-          <div className="flex items-center gap-2 text-2xl font-bold text-white">
-            <div className="w-8 h-8 rounded bg-gray-500"></div> STRATOS
+        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-30 grayscale contrast-125">
+          {/* Professional Monochrome Logos */}
+          <div className="flex items-center gap-3 text-xl font-bold text-brand-black tracking-tighter">
+            <div className="w-6 h-6 border-2 border-brand-black"></div> STRATOS
           </div>
-          <div className="flex items-center gap-2 text-2xl font-bold text-white">
-            <div className="w-8 h-8 rounded-full bg-gray-500"></div> QUANTUM
+          <div className="flex items-center gap-3 text-xl font-bold text-brand-black tracking-tighter">
+            <div className="w-6 h-6 rounded-full border-2 border-brand-black"></div> QUANTUM
           </div>
-          <div className="flex items-center gap-2 text-2xl font-bold text-white">
-            <div className="w-8 h-8 transform rotate-45 bg-gray-500"></div> NEXUS
+          <div className="flex items-center gap-3 text-xl font-bold text-brand-black tracking-tighter">
+            <div className="w-6 h-6 transform rotate-45 border-2 border-brand-black"></div> NEXUS
           </div>
-          <div className="flex items-center gap-2 text-2xl font-bold text-white">
-             APEX
+          <div className="flex items-center gap-3 text-xl font-bold text-brand-black tracking-tighter">
+             APEX ADVISORY
           </div>
-          <div className="flex items-center gap-2 text-2xl font-bold text-white">
-            <div className="w-8 h-8 rounded-tr-xl bg-gray-500"></div> VELOCITY
+          <div className="flex items-center gap-3 text-xl font-bold text-brand-black tracking-tighter">
+            <div className="w-6 h-6 border-t-2 border-brand-black"></div> VELOCITY
           </div>
         </div>
       </div>

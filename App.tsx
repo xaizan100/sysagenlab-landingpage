@@ -31,12 +31,7 @@ const App: React.FC = () => {
   }, [toast]);
 
   return (
-    <div className={`relative min-h-screen bg-[#0a0a0a] selection:bg-blue-500 selection:text-white transition-opacity duration-300 ease-out ${mounted ? 'opacity-100' : 'opacity-0'}`}>
-      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-blue-900/5 rounded-full" style={{ background: 'radial-gradient(circle, rgba(30,58,138,0.1) 0%, transparent 70%)' }}></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-purple-900/5 rounded-full" style={{ background: 'radial-gradient(circle, rgba(88,28,135,0.1) 0%, transparent 70%)' }}></div>
-      </div>
-
+    <div className={`relative min-h-screen bg-white selection:bg-brand-black selection:text-white transition-opacity duration-500 ease-out ${mounted ? 'opacity-100' : 'opacity-0'}`}>
       <div className="relative z-10 flex flex-col">
         <Navbar />
         
@@ -44,20 +39,36 @@ const App: React.FC = () => {
           <div id="hero">
             <Hero />
           </div>
-          <SocialProof />
-          <div id="infrastructure" className="scroll-mt-32">
+          
+          <div className="bg-white border-y border-brand-border">
+            <SocialProof />
+          </div>
+
+          <div id="infrastructure" className="scroll-mt-32 bg-brand-surface py-24 md:py-32">
             <ValuePropSection />
           </div>
-          <div id="diagnosis" className="scroll-mt-32">
+
+          <div id="diagnosis" className="scroll-mt-32 bg-white py-24 md:py-32 border-b border-brand-border">
             <ClinicTypes />
           </div>
-          <MarketingFailure />
-          <FinancialFraming />
-          <div id="testimonials" className="scroll-mt-32">
+
+          <div className="bg-brand-surface py-24 md:py-32 border-b border-brand-border">
+            <MarketingFailure />
+          </div>
+
+          <div className="bg-white py-24 md:py-32 border-b border-brand-border">
+            <FinancialFraming />
+          </div>
+
+          <div id="testimonials" className="scroll-mt-32 bg-brand-surface py-24 md:py-32 border-b border-brand-border">
             <Testimonials />
           </div>
-          <Qualification />
-          <div id="contact" className="scroll-mt-32">
+
+          <div className="bg-white py-24 md:py-32 border-b border-brand-border">
+            <Qualification />
+          </div>
+
+          <div id="contact" className="scroll-mt-32 bg-brand-surface py-24 md:py-32">
             <BookingSection />
           </div>
         </main>
@@ -67,9 +78,9 @@ const App: React.FC = () => {
 
       {toast && (
         <div className="fixed bottom-8 right-8 z-[100] animate-fade-in">
-          <div className="bg-black/90 backdrop-blur-2xl border border-white/10 px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4">
-            <div className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></div>
-            <span className="text-white text-sm font-bold tracking-tight">{toast}</span>
+          <div className="bg-white border border-brand-border px-6 py-4 rounded-xl shadow-premium flex items-center gap-4">
+            <div className="w-2 h-2 rounded-full bg-brand-black"></div>
+            <span className="text-brand-black text-sm font-medium tracking-tight">{toast}</span>
           </div>
         </div>
       )}

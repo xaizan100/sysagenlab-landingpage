@@ -18,32 +18,31 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <section className="relative pt-32 md:pt-48 pb-20 px-6 text-center overflow-hidden">
-      {/* Background Ambience */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl aspect-square bg-blue-600/5 blur-[120px] rounded-full pointer-events-none"></div>
-      <div className="absolute top-40 left-1/3 -translate-x-1/2 w-full max-w-2xl aspect-square bg-purple-600/5 blur-[120px] rounded-full pointer-events-none"></div>
+    <section className="relative pt-48 md:pt-64 pb-32 px-6 text-center overflow-hidden bg-white">
+      {/* Subtle Architectural Grid - 2% opacity */}
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', backgroundSize: '80px 80px' }}></div>
+      
+      {/* Soft Radial Gradient Depth */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.02)_0%,transparent_70%)] pointer-events-none"></div>
 
-      <div className="max-w-5xl mx-auto relative">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-[10px] md:text-xs font-black text-purple-400 mb-8 animate-fade-in uppercase tracking-[0.2em]">
-          Revenue Infrastructure for Private Clinics
+      <div className="max-w-6xl mx-auto relative">
+        <div className="inline-flex items-center gap-3 px-5 py-2 bg-brand-surface border border-brand-border text-[10px] md:text-[11px] font-bold text-brand-grey mb-12 animate-fade-in uppercase tracking-[0.4em] shadow-sm">
+          Revenue Infrastructure & Strategy
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-8 leading-[1.1] md:leading-[0.95] text-center">
+        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[100px] font-bold tracking-[-0.04em] text-brand-black mb-12 leading-[0.85] text-center max-w-5xl mx-auto">
           Predictable Patient <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-purple-600">Revenue Systems.</span>
+          Revenue Systems.
         </h1>
 
-        <div className="relative h-24 md:h-20 mb-12 overflow-hidden">
+        <div className="relative h-24 md:h-16 mb-20 overflow-hidden">
           {slides.map((text, index) => (
             <p
               key={index}
-              style={{ willChange: 'transform, opacity' }}
-              className={`absolute inset-0 text-base md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-medium transition-all duration-700 ease-in-out transform ${
+              className={`absolute inset-0 text-lg md:text-2xl text-brand-grey max-w-3xl mx-auto leading-relaxed font-light transition-all duration-1000 ease-in-out transform ${
                 activeSlide === index 
                   ? 'translate-y-0 opacity-100' 
-                  : index < activeSlide 
-                    ? '-translate-y-full opacity-0' 
-                    : 'translate-y-full opacity-0'
+                  : '-translate-y-8 opacity-0'
               }`}
             >
               {text}
@@ -51,19 +50,20 @@ const Hero: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-12">
           <a 
             href="#contact" 
-            className="w-full sm:w-auto bg-white text-black px-6 py-3 md:px-10 md:py-5 rounded-2xl font-black text-sm md:text-lg hover:bg-purple-600 hover:text-white transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-purple-500/10"
+            className="w-full sm:w-auto bg-brand-black text-white px-14 py-6 rounded-none font-bold text-sm md:text-base hover:bg-brand-grey hover:scale-[1.02] transition-all uppercase tracking-[0.2em] shadow-premium active:scale-95"
           >
             Book a Revenue Audit
           </a>
-          <div className="flex items-center gap-4 text-left">
-            <div className="text-[10px] md:text-xs text-gray-500 font-bold uppercase tracking-tight">
-              Strategic Growth <br /> 
-              <span className="text-white">Not Just Automation</span>
-            </div>
-          </div>
+          <a 
+            href="#infrastructure" 
+            className="text-brand-black font-bold text-sm uppercase tracking-[0.2em] hover:opacity-60 transition-opacity flex items-center gap-3 group"
+          >
+            Our Approach
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </a>
         </div>
       </div>
     </section>

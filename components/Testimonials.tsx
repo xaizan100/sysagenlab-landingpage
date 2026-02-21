@@ -28,37 +28,44 @@ const reviews: Testimonial[] = [
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="py-24 px-4 bg-black section-optimized">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter">Verified Business Results</h2>
-          <p className="text-gray-500 mt-4 font-medium italic">How we helped our clients reduce costs and increase output.</p>
+    <section className="max-w-7xl mx-auto section-optimized">
+      <div className="text-left mb-24 flex items-start gap-8">
+        <div className="w-1 h-32 bg-brand-black hidden md:block"></div>
+        <div>
+          <div className="inline-block bg-white text-brand-grey font-bold px-5 py-2 text-[10px] uppercase tracking-[0.4em] mb-8 border border-brand-border shadow-sm">
+            Client Outcomes
+          </div>
+          <h2 className="text-5xl md:text-7xl font-bold text-brand-black mb-8 tracking-tighter leading-[1] uppercase">Verified Results</h2>
+          <p className="text-brand-grey mt-6 font-light italic text-lg">Measurable impact across private medical and aesthetic practices.</p>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {reviews.map((review, i) => (
-            <div key={i} className="bg-[#111] border border-white/5 p-8 rounded-3xl flex flex-col justify-between">
-              <div>
-                <p className="text-gray-400 text-sm leading-relaxed mb-6 font-medium">
-                  "{review.text}"
-                </p>
-                <div className="flex items-center gap-4">
-                  <img 
-                    src={review.avatar} 
-                    alt={review.name} 
-                    loading="lazy"
-                    decoding="async"
-                    className="w-10 h-10 rounded-full grayscale" 
-                  />
-                  <div>
-                    <h4 className="font-bold text-white text-sm">{review.name}</h4>
-                    <p className="text-xs text-purple-400 font-bold uppercase tracking-tighter">{review.handle}</p>
-                  </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        {reviews.map((review, i) => (
+          <div 
+            key={i} 
+            className="bg-white border border-brand-border p-12 rounded-[20px] flex flex-col justify-between shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
+          >
+            <div>
+              <p className="text-brand-grey text-sm leading-relaxed mb-12 font-light italic">
+                "{review.text}"
+              </p>
+              <div className="flex items-center gap-6">
+                <img 
+                  src={review.avatar} 
+                  alt={review.name} 
+                  loading="lazy"
+                  decoding="async"
+                  className="w-14 h-14 rounded-none grayscale border border-brand-border group-hover:grayscale-0 transition-all" 
+                />
+                <div>
+                  <h4 className="font-bold text-brand-black text-sm uppercase tracking-tight">{review.name}</h4>
+                  <p className="text-[10px] text-brand-grey font-bold uppercase tracking-widest mt-1">{review.handle}</p>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

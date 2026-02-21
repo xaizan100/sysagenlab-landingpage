@@ -75,31 +75,35 @@ const ValuePropSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24 px-6 max-w-7xl mx-auto section-optimized">
+    <section className="max-w-7xl mx-auto section-optimized">
       {/* THE PROBLEMS - The Hidden Revenue Leak */}
-      <div className="mb-40">
-        <div className="text-center mb-16 md:mb-20">
-          <div className="inline-block bg-red-500/10 text-red-400 font-black px-5 py-2 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 border border-red-500/20">
-            The Hidden Revenue Leak
+      <div className="mb-48">
+        <div className="text-left mb-24 flex items-start gap-8">
+          <div className="w-1 h-32 bg-brand-black hidden md:block"></div>
+          <div>
+            <div className="inline-block bg-white text-brand-grey font-bold px-5 py-2 text-[10px] uppercase tracking-[0.4em] mb-8 border border-brand-border shadow-sm">
+              The Revenue Leak
+            </div>
+            <h2 className="text-5xl md:text-7xl font-bold text-brand-black mb-8 tracking-tighter leading-[1] uppercase">
+              Is your clinic losing <br className="hidden md:block" /> revenue to poor infrastructure?
+            </h2>
+            <p className="text-brand-grey text-lg md:text-xl max-w-3xl font-light leading-relaxed">
+              Most clinics don't have a lead problem; they have a system problem. We identify and fix the structural gaps that are costing you patients every single day.
+            </p>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-[1.1]">
-            Is your clinic losing <br className="hidden md:block" /> revenue to poor infrastructure?
-          </h2>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-medium">
-            Most clinics don't have a lead problem; they have a system problem. We identify and fix the structural gaps that are costing you patients every single day.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {problems.map((item, idx) => (
             <div 
               key={idx} 
-              style={cardStyle}
-              className="bg-[#0f0f0f] border border-white/5 p-8 rounded-3xl transition-all hover:border-red-500/20 group"
+              className="bg-white border border-brand-border p-12 rounded-[20px] shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
             >
-              <div className="text-3xl mb-6 group-hover:scale-110 transition-transform origin-left">{item.icon}</div>
-              <h3 className="text-xl font-bold text-white mb-3 tracking-tight">{item.title}</h3>
-              <p className="text-gray-500 leading-relaxed text-sm font-medium">
+              <div className="w-12 h-12 flex items-center justify-center border border-brand-border rounded-lg mb-10 group-hover:border-brand-black transition-colors">
+                <span className="text-2xl grayscale opacity-60 group-hover:opacity-100 transition-opacity">{item.icon}</span>
+              </div>
+              <h3 className="text-lg font-bold text-brand-black mb-4 tracking-tight uppercase">{item.title}</h3>
+              <p className="text-brand-grey leading-relaxed text-sm font-light">
                 {item.desc}
               </p>
             </div>
@@ -108,29 +112,33 @@ const ValuePropSection: React.FC = () => {
       </div>
 
       {/* THE SOLUTIONS - Revenue Infrastructure */}
-      <div className="pt-24 border-t border-white/5">
-        <div className="text-center mb-16 md:mb-20">
-          <div className="inline-block bg-green-500/10 text-green-400 font-black px-5 py-2 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 border border-green-500/20">
-            Our Approach
+      <div className="pt-32 border-t border-brand-border">
+        <div className="text-left mb-24 flex items-start gap-8">
+          <div className="w-1 h-32 bg-brand-black hidden md:block"></div>
+          <div>
+            <div className="inline-block bg-white text-brand-grey font-bold px-5 py-2 text-[10px] uppercase tracking-[0.4em] mb-8 border border-brand-border shadow-sm">
+              Strategic Systems
+            </div>
+            <h2 className="text-5xl md:text-7xl font-bold text-brand-black mb-8 tracking-tighter leading-[1] uppercase">
+              Revenue Infrastructure <br className="hidden md:block" /> built for modern clinics.
+            </h2>
+            <p className="text-brand-grey text-lg md:text-xl max-w-3xl font-light leading-relaxed">
+              We install end-to-end systems that manage the entire patient journey, from initial interest to long-term retention and advocacy.
+            </p>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-[1.1]">
-            Revenue Infrastructure <br className="hidden md:block" /> built for modern clinics.
-          </h2>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-medium">
-            We install end-to-end systems that manage the entire patient journey, from initial interest to long-term retention and advocacy.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {solutions.map((item, idx) => (
             <div 
               key={idx} 
-              style={cardStyle}
-              className="bg-[#0f0f0f] border border-white/5 p-8 rounded-3xl group hover:border-purple-500/30 transition-all"
+              className="bg-white border border-brand-border p-12 rounded-[20px] shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
             >
-              <div className="text-3xl mb-6 group-hover:scale-110 transition-transform origin-left">{item.icon}</div>
-              <h3 className="text-xl font-bold text-white mb-4 tracking-tight">{item.title}</h3>
-              <p className="text-gray-500 leading-relaxed text-sm font-medium">
+              <div className="w-12 h-12 flex items-center justify-center border border-brand-border rounded-lg mb-10 group-hover:border-brand-black transition-colors">
+                <span className="text-2xl grayscale opacity-60 group-hover:opacity-100 transition-opacity">{item.icon}</span>
+              </div>
+              <h3 className="text-lg font-bold text-brand-black mb-4 tracking-tight uppercase">{item.title}</h3>
+              <p className="text-brand-grey leading-relaxed text-sm font-light">
                 {item.desc}
               </p>
             </div>
@@ -139,34 +147,33 @@ const ValuePropSection: React.FC = () => {
       </div>
 
       {/* ROI SUMMARY */}
-      <div className="mt-32 bg-[#0f0f0f] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-16 border border-white/5 relative overflow-hidden" style={{ contain: 'layout' }}>
-        <div className="absolute top-0 right-0 w-64 h-64 opacity-20 pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%)' }}></div>
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div className="mt-48 bg-white border border-brand-border rounded-[24px] p-10 md:p-20 shadow-premium relative overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-20 items-center">
           <div>
-            <h3 className="text-3xl font-bold text-white mb-8 tracking-tight text-left">Strategic Infrastructure</h3>
-            <div className="space-y-6">
-              <div className="p-6 rounded-2xl bg-red-500/5 border border-red-500/10">
-                <p className="text-red-400 font-bold mb-3">Traditional Marketing Agencies</p>
-                <ul className="text-gray-500 text-sm space-y-3 font-medium">
-                  <li>• Focus solely on lead volume, not conversion</li>
-                  <li>• No integration with your clinic's operations</li>
-                  <li>• Fragmented reporting and zero accountability</li>
+            <h3 className="text-4xl font-bold text-brand-black mb-10 tracking-tighter uppercase">Strategic Infrastructure</h3>
+            <div className="space-y-10">
+              <div className="pb-10 border-b border-brand-border">
+                <p className="text-brand-grey font-bold text-[10px] uppercase tracking-[0.3em] mb-6">Traditional Marketing Agencies</p>
+                <ul className="text-brand-grey text-sm space-y-5 font-light">
+                  <li className="flex items-center gap-4"><div className="w-1.5 h-1.5 bg-brand-border"></div> Focus solely on lead volume, not conversion</li>
+                  <li className="flex items-center gap-4"><div className="w-1.5 h-1.5 bg-brand-border"></div> No integration with your clinic's operations</li>
+                  <li className="flex items-center gap-4"><div className="w-1.5 h-1.5 bg-brand-border"></div> Fragmented reporting and zero accountability</li>
                 </ul>
               </div>
-              <div className="p-6 rounded-2xl bg-green-500/5 border border-green-500/10">
-                <p className="text-green-400 font-bold mb-3">SysAgen Revenue Systems</p>
-                <ul className="text-gray-400 text-sm space-y-3 font-medium">
-                  <li>• End-to-end systems built for patient conversion</li>
-                  <li>• Seamless integration with your existing team</li>
-                  <li>• Full visibility on revenue and ROI metrics</li>
+              <div>
+                <p className="text-brand-black font-bold text-[10px] uppercase tracking-[0.3em] mb-6">SysAgen Revenue Systems</p>
+                <ul className="text-brand-black text-sm space-y-5 font-medium">
+                  <li className="flex items-center gap-4"><div className="w-1.5 h-1.5 bg-brand-black"></div> End-to-end systems built for patient conversion</li>
+                  <li className="flex items-center gap-4"><div className="w-1.5 h-1.5 bg-brand-black"></div> Seamless integration with your existing team</li>
+                  <li className="flex items-center gap-4"><div className="w-1.5 h-1.5 bg-brand-black"></div> Full visibility on revenue and ROI metrics</li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center bg-black/40 backdrop-blur-sm rounded-3xl border border-white/10 p-10 text-center shadow-2xl">
-            <div className="text-6xl font-black text-white mb-2">ROI</div>
-            <div className="text-[10px] text-purple-400 font-black uppercase tracking-[0.2em] mb-8">Predictable Growth Engine</div>
-            <a href="#contact" className="w-full bg-purple-600 text-white py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-purple-500 transition-all active:scale-95 shadow-lg shadow-purple-500/20">
+          <div className="flex flex-col justify-center items-center bg-brand-surface border border-brand-border rounded-[20px] p-16 text-center shadow-inner">
+            <div className="text-8xl font-bold text-brand-black mb-4 tracking-tighter">ROI</div>
+            <div className="text-[10px] text-brand-grey font-bold uppercase tracking-[0.4em] mb-12">Predictable Growth Engine</div>
+            <a href="#contact" className="w-full bg-brand-black text-white py-6 rounded-none font-bold text-sm uppercase tracking-[0.2em] hover:bg-brand-grey hover:scale-[1.02] transition-all shadow-premium active:scale-95">
               Book a Revenue Audit
             </a>
           </div>
