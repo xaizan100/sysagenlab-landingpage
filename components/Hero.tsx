@@ -12,9 +12,9 @@ const Hero: React.FC = () => {
   }, []);
 
   const slides = [
-    "Most clinics don't have a lead problem. They have a system problem. We install the predictable revenue infrastructure required to scale your patient base without increasing your overhead.",
-    "Stop losing revenue to slow response times and missed follow-ups. Our systems ensure every patient enquiry is captured, nurtured, and converted with professional precision.",
-    "We engineer end-to-end patient acquisition and conversion systems that transform manual clinic operations into high-performance revenue growth engines."
+    "We build the demand generation and conversion infrastructure required for predictable growth.",
+    "Stop relying on referrals. Install a professional system for patient acquisition and retention.",
+    "From market demand to booked treatment — we engineer the entire revenue journey."
   ];
 
   return (
@@ -27,19 +27,18 @@ const Hero: React.FC = () => {
 
       <div className="max-w-6xl mx-auto relative">
         <div className="inline-flex items-center gap-3 px-5 py-2 bg-brand-surface border border-brand-border text-[10px] md:text-[11px] font-bold text-brand-grey mb-12 animate-fade-in uppercase tracking-[0.4em] shadow-sm">
-          Revenue Infrastructure & Strategy
+          Demand Creation + Conversion Infrastructure
         </div>
 
-        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[100px] font-bold tracking-[-0.04em] text-brand-black mb-12 leading-[0.85] text-center max-w-5xl mx-auto">
-          Predictable Patient <br />
-          Revenue Systems.
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-[-0.04em] text-brand-black mb-12 leading-[0.9] text-center max-w-5xl mx-auto uppercase">
+          More Qualified Patients. Higher Conversion. Structured Revenue.
         </h1>
 
         <div className="relative h-24 md:h-16 mb-20 overflow-hidden">
           {slides.map((text, index) => (
             <p
               key={index}
-              className={`absolute inset-0 text-lg md:text-2xl text-brand-grey max-w-3xl mx-auto leading-relaxed font-light transition-all duration-1000 ease-in-out transform ${
+              className={`absolute inset-0 text-lg md:text-2xl text-brand-grey max-w-4xl mx-auto leading-relaxed font-light transition-all duration-1000 ease-in-out transform ${
                 activeSlide === index 
                   ? 'translate-y-0 opacity-100' 
                   : '-translate-y-8 opacity-0'
@@ -61,7 +60,7 @@ const Hero: React.FC = () => {
             href="#infrastructure" 
             className="text-brand-black font-bold text-sm uppercase tracking-[0.2em] hover:opacity-60 transition-opacity flex items-center gap-3 group"
           >
-            Our Approach
+            Our Methodology
             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </a>
         </div>

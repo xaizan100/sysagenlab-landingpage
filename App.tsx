@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import SocialProof from './components/SocialProof';
 import ValuePropSection from './components/ValuePropSection';
 import ClinicTypes from './components/ClinicTypes';
-import MarketingFailure from './components/MarketingFailure';
 import FinancialFraming from './components/FinancialFraming';
 import Qualification from './components/Qualification';
 import Testimonials from './components/Testimonials';
@@ -50,10 +49,6 @@ const App: React.FC = () => {
 
           <div id="diagnosis" className="scroll-mt-32 bg-white py-24 md:py-32 border-b border-brand-border">
             <ClinicTypes />
-          </div>
-
-          <div className="bg-brand-surface py-24 md:py-32 border-b border-brand-border">
-            <MarketingFailure />
           </div>
 
           <div className="bg-white py-24 md:py-32 border-b border-brand-border">

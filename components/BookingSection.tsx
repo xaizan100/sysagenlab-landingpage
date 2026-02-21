@@ -96,23 +96,23 @@ const BookingSection: React.FC = () => {
             </div>
             
             <p className="text-brand-grey text-lg mb-12 leading-relaxed font-light">
-              This is a diagnostic call, not a sales pitch. We will audit your current patient acquisition and conversion systems to identify exactly where your revenue is leaking.
+              This is a diagnostic assessment, not a sales pitch. We will audit your demand generation strength, your conversion infrastructure, and your revenue leak points to identify your growth ceiling.
             </p>
 
             <div className="space-y-10">
               <div className="flex items-start gap-6 group">
                 <div className="w-2 h-2 rounded-none bg-brand-black flex-shrink-0 mt-2 group-hover:scale-150 transition-transform"></div>
                 <div>
-                  <h4 className="text-brand-black font-bold text-sm uppercase tracking-tight">Diagnostic Approach</h4>
-                  <p className="text-brand-grey text-xs mt-2 font-light leading-relaxed">If we don't believe we can create a measurable impact for your clinic, we will say so immediately.</p>
+                  <h4 className="text-brand-black font-bold text-sm uppercase tracking-tight">Diagnostic Assessment</h4>
+                  <p className="text-brand-grey text-xs mt-2 font-light leading-relaxed">If we cannot create a measurable, significant impact for your clinic, we will say so immediately.</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-6 group">
                 <div className="w-2 h-2 rounded-none bg-brand-black flex-shrink-0 mt-2 group-hover:scale-150 transition-transform"></div>
                 <div>
-                  <h4 className="text-brand-black font-bold text-sm uppercase tracking-tight">Infrastructure Blueprint</h4>
-                  <p className="text-brand-grey text-xs mt-2 font-light leading-relaxed">Leave the call with a clear understanding of the systems required to scale your clinic's revenue.</p>
+                  <h4 className="text-brand-black font-bold text-sm uppercase tracking-tight">Growth Engineering</h4>
+                  <p className="text-brand-grey text-xs mt-2 font-light leading-relaxed">Growth should be engineered — not left to chance. Leave the call with a clear blueprint for your revenue infrastructure.</p>
                 </div>
               </div>
 

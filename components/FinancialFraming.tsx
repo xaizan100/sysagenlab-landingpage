@@ -11,23 +11,23 @@ const FinancialFraming: React.FC = () => {
               <div className="w-1 h-24 bg-brand-black hidden md:block"></div>
               <div>
                 <div className="inline-block bg-brand-surface text-brand-grey font-bold px-4 py-1.5 text-[10px] uppercase tracking-[0.3em] mb-6 border border-brand-border shadow-sm">
-                  Financial Impact
+                  The Mathematics of Growth
                 </div>
                 <h2 className="text-5xl md:text-7xl font-bold text-brand-black mb-10 tracking-tighter leading-[1] uppercase">
                   Small improvements. <br />
                   Significant revenue.
                 </h2>
                 <p className="text-brand-grey text-lg md:text-xl font-light leading-relaxed">
-                  You don't always need more leads to grow. Often, the fastest way to increase your clinic's revenue is by fixing the conversion leaks in your existing infrastructure.
+                  Growth does not require miracles; it requires optimization. Small conversion improvements in your infrastructure compound into significant annual revenue without increasing your advertising spend.
                 </p>
               </div>
             </div>
             
             <div className="space-y-12">
               {[
-                { title: "Conversion Optimization", desc: "A 10% increase in lead-to-consultation conversion can result in a 25-30% increase in net profit without spending an extra penny on ads.", icon: "📈" },
-                { title: "No-Show Reduction", desc: "Automated deposit enforcement and multi-channel reminders protect your practitioners' time and ensure your clinic's capacity is fully utilized.", icon: "🛡️" },
-                { title: "Patient Reactivation", desc: "Re-engaging dormant patients for maintenance treatments or new procedures creates immediate cash flow from an asset you already own.", icon: "💎" }
+                { title: "Consultation Conversion", desc: "A 10% increase in lead-to-consultation conversion can result in a 25-30% increase in net profit by capturing demand you are already paying for.", icon: "📈" },
+                { title: "No-Show Reduction", desc: "Reducing no-shows by 20% through automated deposit enforcement and multi-channel reminders protects your practitioners' time and clinic capacity.", icon: "🛡️" },
+                { title: "Database Reactivation", desc: "Re-engaging just 5% of your dormant patient database creates immediate cash flow from an asset you already own, with zero acquisition cost.", icon: "💎" }
               ].map((item, i) => (
                 <div key={i} className="flex gap-10 group">
                   <div className="text-3xl grayscale opacity-60 group-hover:opacity-100 transition-opacity">{item.icon}</div>
@@ -49,9 +49,9 @@ const FinancialFraming: React.FC = () => {
             
             <div className="space-y-6 mb-16">
               {[
-                { label: "Missed Calls Captured", value: "+15%" },
-                { label: "Follow-up Conversion", value: "+20%" },
-                { label: "No-Show Reduction", value: "-40%" }
+                { label: "Consultation Conversion", value: "+10%" },
+                { label: "No-Show Reduction", value: "-20%" },
+                { label: "Database Reactivation", value: "+5%" }
               ].map((stat, idx) => (
                 <div key={idx} className="flex justify-between items-center py-4 border-b border-brand-border">
                   <span className="text-brand-grey text-sm uppercase tracking-widest font-bold">{stat.label}</span>
@@ -61,7 +61,7 @@ const FinancialFraming: React.FC = () => {
             </div>
             
             <p className="text-brand-grey text-[10px] text-center italic leading-relaxed font-light mb-12">
-              *Estimates based on average aesthetic clinic metrics. Actual results depend on treatment value and current infrastructure efficiency.
+              *Estimates based on average results across private medical and aesthetic practices implementing our revenue infrastructure.
             </p>
 
             <a href="#contact" className="w-full block bg-brand-black text-white py-6 rounded-none font-bold text-sm text-center uppercase tracking-[0.2em] hover:bg-brand-grey hover:scale-[1.02] transition-all shadow-premium active:scale-95">

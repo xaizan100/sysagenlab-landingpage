@@ -6,26 +6,23 @@ const ClinicTypes: React.FC = () => {
     {
       id: "type-1",
       title: "Type 1: High Lead Flow, Poor Conversion",
-      situation: "You are spending heavily on marketing and generating plenty of enquiries, but your front-of-house team is overwhelmed and follow-up is inconsistent.",
-      realIssue: "Your infrastructure is leaking. You are paying for leads that never reach a consultation because of slow response times and lack of nurture.",
-      fix: "Install Lead Capture & Speed-to-Lead systems to ensure every enquiry is handled with professional precision within seconds.",
-      color: "blue"
+      situation: "You have the volume, but your systems are breaking. Leads are falling through the cracks, and your team is overwhelmed by manual follow-up.",
+      realIssue: "You are leaving six figures on the table in uncaptured revenue due to a lack of conversion infrastructure.",
+      fix: "Install automated speed-to-lead and nurture systems to protect and capture existing demand."
     },
     {
       id: "type-2",
       title: "Type 2: Moderate Lead Flow, No Systems",
-      situation: "You have a steady stream of patients, but growth has plateaued. You rely on manual processes and have no clear visibility on your conversion metrics.",
-      realIssue: "You lack a predictable growth engine. Your revenue is tied to your manual effort, making it impossible to scale without increasing stress.",
-      fix: "Implement Conversion & Follow-Up infrastructure to automate the patient journey and provide real-time revenue visibility.",
-      color: "purple"
+      situation: "You are stable but stagnant. You rely on a few key channels, but you have no predictable way to scale without increasing overhead.",
+      realIssue: "Without infrastructure, scaling will only increase your operational burden without a proportional increase in profit.",
+      fix: "Build a dual Demand + Conversion engine to create a scalable, predictable path to growth."
     },
     {
       id: "type-3",
       title: "Type 3: Low Lead Flow, No Marketing",
-      situation: "You are a specialist clinic with high-quality treatments, but you rely almost entirely on word-of-mouth. Demand is inconsistent and unpredictable.",
-      realIssue: "You have a demand problem. Automation alone won't solve this; you need a system to proactively attract and educate your ideal patients.",
-      fix: "Deploy Demand Creation Systems first to build a consistent pipeline of high-intent patients before layering on conversion infrastructure.",
-      color: "emerald"
+      situation: "You are invisible to the market and over-reliant on referrals. Your revenue is capped by your local reputation alone.",
+      realIssue: "Automation alone will not solve your growth; you lack the fundamental engine required to generate market demand.",
+      fix: "Engineer a high-performance Demand Creation system to establish market authority and consistent patient flow."
     }
   ];
 
@@ -35,13 +32,13 @@ const ClinicTypes: React.FC = () => {
         <div className="w-1 h-32 bg-brand-black hidden md:block"></div>
         <div>
           <div className="inline-block bg-white text-brand-grey font-bold px-5 py-2 text-[10px] uppercase tracking-[0.4em] mb-8 border border-brand-border shadow-sm">
-            Strategic Assessment
+            Self-Selection
           </div>
           <h2 className="text-5xl md:text-7xl font-bold text-brand-black mb-8 tracking-tighter leading-[1] uppercase">
-            Which stage is your <br className="hidden md:block" /> clinic currently in?
+            The Three Stages of <br className="hidden md:block" /> Clinic Growth.
           </h2>
           <p className="text-brand-grey text-lg md:text-xl max-w-3xl font-light leading-relaxed">
-            Identifying your current bottleneck is the first step toward building a predictable revenue engine.
+            Identifying your current structural bottleneck is the first step toward engineering a predictable revenue engine.
           </p>
         </div>
       </div>
