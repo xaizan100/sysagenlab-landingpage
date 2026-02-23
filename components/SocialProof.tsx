@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
 
 const SocialProof: React.FC = () => {
@@ -22,12 +23,17 @@ const SocialProof: React.FC = () => {
           </div>
           <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-70">
             {partners.map((name, i) => (
-              <span
+              <motion.span
                 key={i}
-                className="text-sm md:text-base font-black text-brand-grey tracking-tighter uppercase hover:text-brand-white transition-colors"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.06, duration: 0.5 }}
+                whileHover={{ scale: 1.05 }}
+                className="text-sm md:text-base font-black text-brand-grey tracking-tighter uppercase hover:text-brand-white transition-colors cursor-default"
               >
                 {name}
-              </span>
+              </motion.span>
             ))}
           </div>
         </div>

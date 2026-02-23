@@ -51,10 +51,11 @@ const Testimonials: React.FC = () => {
         {reviews.map((review, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1, duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: i * 0.12, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, transition: { duration: 0.2 } }}
             className="editorial-card p-10 md:p-12 flex flex-col justify-between"
           >
             <div className="relative z-10">

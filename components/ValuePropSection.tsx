@@ -123,10 +123,11 @@ const ValuePropSection: React.FC = () => {
               <div className="w-10 h-[1px] bg-brand-accent" />
               <span className="section-label">Our Approach</span>
             </div>
-            <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-brand-white mb-10 tracking-[-0.05em] leading-[0.85] uppercase">
-              Revenue <br /> Infrastructure.
+            <h2 className="text-5xl md:text-6xl lg:text-[4.5rem] font-black text-brand-white mb-10 tracking-[-0.05em] leading-[0.9] uppercase">
+              <span className="block">Revenue</span>
+              <span className="block">Infrastructure.</span>
             </h2>
-            <p className="text-brand-grey text-lg md:text-xl max-w-2xl font-light leading-relaxed">
+            <p className="text-brand-white text-lg md:text-xl max-w-2xl font-light leading-relaxed opacity-90">
               We don't sell software or run ads in isolation. We install predictable patient acquisition and conversion systems. Demand creation, lead capture, conversion and follow-up, retention and reactivation, and full revenue visibility. Structured, intelligent, and built to last.
             </p>
           </motion.div>

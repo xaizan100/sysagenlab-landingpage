@@ -10,7 +10,7 @@
   --color-brand-white: #ffffff;
   --color-brand-offwhite: #f5f5f5;
   --color-brand-light: #e5e5e5;
-  --color-brand-grey: #9ca3af;
+  --color-brand-grey: #ffffff;
   --color-brand-black: #111111;
   --color-brand-accent: #c9a227;
   --color-brand-accent-hover: #d4af37;
@@ -57,8 +57,12 @@
     @apply bg-brand-surface border border-brand-border rounded-none shadow-editorial transition-all duration-500;
   }
 
+  .editorial-card:hover {
+    @apply shadow-editorial-hover border-brand-border-strong -translate-y-0.5;
+  }
+
   .btn-editorial {
-    @apply relative overflow-hidden bg-brand-accent text-brand-charcoal px-8 py-4 rounded-none font-black uppercase tracking-[0.2em] text-[11px] transition-all duration-500 hover:bg-brand-accent-hover hover:text-brand-charcoal hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-3 shadow-md;
+    @apply relative overflow-hidden bg-brand-accent text-brand-charcoal px-8 py-4 rounded-none font-black uppercase tracking-[0.2em] text-[11px] transition-all duration-300 hover:bg-brand-accent-hover hover:text-brand-charcoal hover:-translate-y-0.5 hover:shadow-lg active:scale-[0.98] flex items-center justify-center gap-3 shadow-md;
   }
 
   .btn-outline-editorial {
@@ -75,6 +79,18 @@
 
   .image-reveal:hover img {
     @apply scale-100;
+  }
+
+  /* Interactive link underline */
+  .link-underline {
+    @apply relative;
+  }
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-[1px] bg-brand-accent scale-x-0 origin-left transition-transform duration-300;
+  }
+  .link-underline:hover::after {
+    @apply scale-x-100;
   }
 
   /* Section label – gold accent like template */

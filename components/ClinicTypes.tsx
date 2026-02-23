@@ -50,11 +50,12 @@ const ClinicTypes: React.FC = () => {
         {types.map((type, idx) => (
           <motion.div
             key={type.id}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 32 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: idx * 0.1, duration: 0.8 }}
-            className="editorial-card p-10 md:p-12 flex flex-col h-full"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: idx * 0.12, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, transition: { duration: 0.2 } }}
+            className="editorial-card p-10 md:p-12 flex flex-col h-full cursor-default"
           >
             <h3 className="text-xl font-black mb-12 tracking-tight text-brand-white uppercase leading-tight">
               {type.title}

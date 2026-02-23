@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import ScrollProgress from './components/ScrollProgress';
 import Hero from './components/Hero';
 import SocialProof from './components/SocialProof';
 import ValuePropSection from './components/ValuePropSection';
@@ -31,6 +32,7 @@ const App: React.FC = () => {
 
   return (
     <div className={`relative min-h-screen bg-brand-charcoal selection:bg-brand-accent selection:text-brand-charcoal transition-opacity duration-1000 ease-out ${mounted ? 'opacity-100' : 'opacity-0'}`}>
+      <ScrollProgress />
       <div className="relative z-10 flex flex-col">
         <Navbar />
         

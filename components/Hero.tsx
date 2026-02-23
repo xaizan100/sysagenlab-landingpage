@@ -35,16 +35,21 @@ const Hero: React.FC = () => {
             </span>
           </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 36 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] xl:text-[5.5rem] font-black tracking-[-0.04em] text-brand-white mb-8 leading-[0.92] uppercase"
-          >
-            Predictable Patient <br />
-            <span className="text-brand-accent">Revenue Systems</span> <br />
-            for Modern Clinics.
-          </motion.h1>
+          <div className="overflow-hidden">
+            <motion.h1
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {},
+                visible: { transition: { staggerChildren: 0.08, delayChildren: 0.2 } },
+              }}
+              className="text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] xl:text-[5.5rem] font-black tracking-[-0.04em] text-brand-white mb-8 leading-[0.92] uppercase"
+            >
+              <motion.span variants={{ hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }} className="block">Predictable Patient</motion.span>
+              <motion.span variants={{ hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }} className="block text-brand-accent">Revenue Systems</motion.span>
+              <motion.span variants={{ hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }} className="block">for Modern Clinics.</motion.span>
+            </motion.h1>
+          </div>
 
           <motion.p
             initial={{ opacity: 0, y: 24 }}
@@ -61,9 +66,14 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-start gap-8"
           >
-            <a href="#contact" className="btn-editorial">
+            <motion.a
+              href="#contact"
+              className="btn-editorial"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
               Book Revenue Audit
-            </a>
+            </motion.a>
             <a
               href="#infrastructure"
               className="group relative text-[11px] font-black text-brand-white uppercase tracking-[0.3em] py-4"
@@ -76,7 +86,11 @@ const Hero: React.FC = () => {
 
         <div className="lg:col-span-5 relative hidden lg:block">
           <motion.div style={{ y: y2 }} className="relative z-10">
-            <div className="image-reveal aspect-[4/5] shadow-editorial border border-brand-border overflow-hidden">
+            <motion.div
+              className="image-reveal aspect-[4/5] shadow-editorial border border-brand-border overflow-hidden"
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+            >
               <img
                 src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80"
                 alt="Modern clinic environment"
@@ -88,7 +102,7 @@ const Hero: React.FC = () => {
                 height={1000}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/60 via-transparent to-transparent pointer-events-none" />
-            </div>
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 32 }}
               animate={{ opacity: 1, x: 0 }}
