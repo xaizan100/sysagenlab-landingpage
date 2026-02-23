@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const ClinicTypes: React.FC = () => {
   const types = [
@@ -27,49 +28,56 @@ const ClinicTypes: React.FC = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto section-optimized">
-      <div className="text-left mb-24 flex items-start gap-8">
-        <div className="w-1 h-32 bg-brand-black hidden md:block"></div>
-        <div>
-          <div className="inline-block bg-white text-brand-grey font-bold px-5 py-2 text-[10px] uppercase tracking-[0.4em] mb-8 border border-brand-border shadow-sm">
-            Self-Selection
-          </div>
-          <h2 className="text-5xl md:text-7xl font-bold text-brand-black mb-8 tracking-tighter leading-[1] uppercase">
-            The Three Stages of <br className="hidden md:block" /> Clinic Growth.
-          </h2>
-          <p className="text-brand-grey text-lg md:text-xl max-w-3xl font-light leading-relaxed">
-            Identifying your current structural bottleneck is the first step toward engineering a predictable revenue engine.
-          </p>
+    <section className="max-w-7xl mx-auto section-optimized px-6">
+      <motion.div 
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="text-left mb-24"
+      >
+        <div className="flex items-center gap-4 mb-10">
+          <div className="w-10 h-[1px] bg-brand-black"></div>
+          <span className="text-[10px] font-black uppercase tracking-[0.5em] text-brand-grey">Self-Selection</span>
         </div>
-      </div>
+        <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-brand-black mb-10 tracking-[-0.05em] leading-[0.85] uppercase">
+          The Three Stages of <br /> Clinic Growth.
+        </h2>
+        <p className="text-brand-grey text-lg md:text-xl max-w-3xl font-light leading-relaxed">
+          Identifying your current structural bottleneck is the first step toward engineering a predictable revenue engine.
+        </p>
+      </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-        {types.map((type) => (
-          <div 
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        {types.map((type, idx) => (
+          <motion.div 
             key={type.id}
-            className="bg-white border border-brand-border rounded-[20px] p-8 md:p-12 flex flex-col h-full shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: idx * 0.1, duration: 0.8 }}
+            className="editorial-card p-10 md:p-12 flex flex-col h-full"
           >
-            <h3 className="text-xl font-bold mb-12 tracking-tight text-brand-black uppercase">
+            <h3 className="text-xl font-black mb-16 tracking-tight text-brand-black uppercase leading-tight">
               {type.title}
             </h3>
             
-            <div className="space-y-12 flex-grow">
+            <div className="space-y-16 flex-grow">
               <div>
-                <p className="text-[10px] text-brand-grey font-bold uppercase tracking-[0.3em] mb-4">The Situation</p>
+                <p className="text-[9px] text-brand-grey font-black uppercase tracking-[0.5em] mb-6">The Situation</p>
                 <p className="text-brand-grey text-sm leading-relaxed font-light">{type.situation}</p>
               </div>
               
               <div>
-                <p className="text-[10px] text-brand-grey font-bold uppercase tracking-[0.3em] mb-4">The Real Issue</p>
-                <p className="text-brand-black text-sm leading-relaxed font-bold">{type.realIssue}</p>
+                <p className="text-[9px] text-brand-grey font-black uppercase tracking-[0.5em] mb-6">The Real Issue</p>
+                <p className="text-brand-black text-sm leading-relaxed font-black uppercase tracking-tight">{type.realIssue}</p>
               </div>
               
-              <div className="pt-10 border-t border-brand-border">
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] mb-4 text-brand-black">The Actual Fix</p>
-                <p className="text-brand-grey text-sm leading-relaxed font-light">{type.fix}</p>
+              <div className="pt-12 border-t border-brand-border">
+                <p className="text-[9px] font-black uppercase tracking-[0.5em] mb-6 text-brand-black">The Actual Fix</p>
+                <p className="text-brand-grey text-sm leading-relaxed font-light italic">{type.fix}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

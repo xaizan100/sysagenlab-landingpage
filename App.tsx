@@ -30,7 +30,7 @@ const App: React.FC = () => {
   }, [toast]);
 
   return (
-    <div className={`relative min-h-screen bg-white selection:bg-brand-black selection:text-white transition-opacity duration-500 ease-out ${mounted ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`relative min-h-screen bg-brand-white selection:bg-brand-black selection:text-brand-white transition-opacity duration-1000 ease-out ${mounted ? 'opacity-100' : 'opacity-0'}`}>
       <div className="relative z-10 flex flex-col">
         <Navbar />
         
@@ -39,31 +39,31 @@ const App: React.FC = () => {
             <Hero />
           </div>
           
-          <div className="bg-white border-y border-brand-border">
+          <div className="bg-brand-white border-y border-brand-border">
             <SocialProof />
           </div>
 
-          <div id="infrastructure" className="scroll-mt-32 bg-brand-surface py-24 md:py-32">
+          <div id="infrastructure" className="scroll-mt-32 bg-brand-white py-10 md:py-16">
             <ValuePropSection />
           </div>
 
-          <div id="diagnosis" className="scroll-mt-32 bg-white py-24 md:py-32 border-b border-brand-border">
+          <div id="diagnosis" className="scroll-mt-32 bg-brand-offwhite py-10 md:py-16 border-y border-brand-border">
             <ClinicTypes />
           </div>
 
-          <div className="bg-white py-24 md:py-32 border-b border-brand-border">
+          <div className="bg-brand-white py-10 md:py-16">
             <FinancialFraming />
           </div>
 
-          <div id="testimonials" className="scroll-mt-32 bg-brand-surface py-24 md:py-32 border-b border-brand-border">
+          <div id="testimonials" className="scroll-mt-32 bg-brand-offwhite py-10 md:py-16 border-y border-brand-border">
             <Testimonials />
           </div>
 
-          <div className="bg-white py-24 md:py-32 border-b border-brand-border">
+          <div className="bg-brand-white py-10 md:py-16">
             <Qualification />
           </div>
 
-          <div id="contact" className="scroll-mt-32 bg-brand-surface py-24 md:py-32">
+          <div id="contact" className="scroll-mt-32 bg-brand-offwhite py-10 md:py-16 border-t border-brand-border">
             <BookingSection />
           </div>
         </main>
@@ -72,10 +72,10 @@ const App: React.FC = () => {
       </div>
 
       {toast && (
-        <div className="fixed bottom-8 right-8 z-[100] animate-fade-in">
-          <div className="bg-white border border-brand-border px-6 py-4 rounded-xl shadow-premium flex items-center gap-4">
-            <div className="w-2 h-2 rounded-full bg-brand-black"></div>
-            <span className="text-brand-black text-sm font-medium tracking-tight">{toast}</span>
+        <div className="fixed bottom-8 right-8 z-[100] animate-slide-up">
+          <div className="bg-brand-white border border-brand-border px-8 py-5 rounded-none shadow-editorial flex items-center gap-4">
+            <div className="w-2 h-2 bg-brand-black"></div>
+            <span className="text-brand-black text-xs font-black uppercase tracking-widest">{toast}</span>
           </div>
         </div>
       )}

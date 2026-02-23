@@ -8,10 +8,10 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ className = "", iconOnly = false }) => {
   const colors = {
-    top: '#E5E5E5',    // Light grey
-    right: '#404040',  // Dark grey
-    left: '#737373',   // Medium grey
-    line: '#111111'    // Black definition line
+    top: '#111111',    // Deep Charcoal
+    right: '#333333',  // Dark Grey
+    left: '#666666',   // Mid Grey
+    line: '#FFFFFF'    // White definition line
   };
 
   const Cube = ({ x, y, opacity = 1 }: { x: number; y: number; opacity?: number }) => (
@@ -28,7 +28,7 @@ const Logo: React.FC<LogoProps> = ({ className = "", iconOnly = false }) => {
       <div className="relative">
         <svg 
           width="60" 
-          height="70" 
+          height="75" 
           viewBox="0 0 100 110" 
           fill="none" 
           xmlns="http://www.w3.org/2000/svg" 
@@ -44,8 +44,9 @@ const Logo: React.FC<LogoProps> = ({ className = "", iconOnly = false }) => {
       </div>
 
       {!iconOnly && (
-        <div className="flex items-baseline font-bold tracking-tighter text-3xl md:text-4xl text-brand-black">
-          <span>SYSAGENLAB</span>
+        <div className="flex items-baseline font-black tracking-[0.3em] text-xl md:text-2xl text-brand-black uppercase">
+          <span>SYSAGEN</span>
+          <span className="text-brand-grey">LAB</span>
         </div>
       )}
     </div>

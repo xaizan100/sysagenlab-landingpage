@@ -1,6 +1,8 @@
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Testimonial } from '../types';
+import { Quote } from 'lucide-react';
 
 const reviews: Testimonial[] = [
   {
@@ -28,29 +30,36 @@ const reviews: Testimonial[] = [
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="max-w-7xl mx-auto section-optimized">
-      <div className="text-left mb-24 flex items-start gap-8">
-        <div className="w-1 h-32 bg-brand-black hidden md:block"></div>
-        <div>
-          <div className="inline-block bg-white text-brand-grey font-bold px-5 py-2 text-[10px] uppercase tracking-[0.4em] mb-8 border border-brand-border shadow-sm">
-            Client Outcomes
-          </div>
-          <h2 className="text-5xl md:text-7xl font-bold text-brand-black mb-8 tracking-tighter leading-[1] uppercase">Verified Results</h2>
-          <p className="text-brand-grey mt-6 font-light italic text-lg">Measurable impact across private medical and aesthetic practices.</p>
+    <section className="max-w-7xl mx-auto section-optimized px-6">
+      <motion.div 
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="text-left mb-24"
+      >
+        <div className="flex items-center gap-4 mb-10">
+          <div className="w-10 h-[1px] bg-brand-black"></div>
+          <span className="text-[10px] font-black uppercase tracking-[0.5em] text-brand-grey">Client Outcomes</span>
         </div>
-      </div>
+        <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-brand-black mb-10 tracking-[-0.05em] leading-[0.85] uppercase">Verified Results</h2>
+        <p className="text-brand-grey mt-6 font-light italic text-lg">Measurable impact across private medical and aesthetic practices.</p>
+      </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {reviews.map((review, i) => (
-          <div 
+          <motion.div 
             key={i} 
-            className="bg-white border border-brand-border p-12 rounded-[20px] flex flex-col justify-between shadow-premium transition-all duration-200 hover:-translate-y-1 hover:shadow-premium-hover group"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.1, duration: 0.8 }}
+            className="editorial-card p-10 md:p-12 flex flex-col justify-between"
           >
-            <div>
-              <p className="text-brand-grey text-sm leading-relaxed mb-12 font-light italic">
+            <div className="relative z-10">
+              <p className="text-brand-grey text-base leading-relaxed mb-16 font-light italic">
                 "{review.text}"
               </p>
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6 pt-10 border-t border-brand-border">
                 <img 
                   src={review.avatar} 
                   alt={review.name} 
@@ -58,15 +67,16 @@ const Testimonials: React.FC = () => {
                   decoding="async"
                   width="56"
                   height="56"
-                  className="w-14 h-14 rounded-none grayscale border border-brand-border group-hover:grayscale-0 transition-all object-cover" 
+                  className="w-12 h-12 rounded-none grayscale object-cover" 
+                  referrerPolicy="no-referrer"
                 />
                 <div>
-                  <h4 className="font-bold text-brand-black text-sm uppercase tracking-tight">{review.name}</h4>
-                  <p className="text-[10px] text-brand-grey font-bold uppercase tracking-widest mt-1">{review.handle}</p>
+                  <h4 className="font-black text-brand-black text-xs uppercase tracking-tight">{review.name}</h4>
+                  <p className="text-[9px] text-brand-grey font-black uppercase tracking-[0.3em] mt-1">{review.handle}</p>
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
