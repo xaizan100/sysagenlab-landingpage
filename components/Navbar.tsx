@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
         onClick={closeMenu}
         className="btn-editorial !px-6 !py-3 !text-[10px] mt-4 md:mt-0"
       >
-        Book Audit
+        Book Revenue Audit
       </a>
     </>
   );

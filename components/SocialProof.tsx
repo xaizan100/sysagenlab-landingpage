@@ -17,7 +17,7 @@ const SocialProof: React.FC = () => {
           <div className="flex flex-col items-center gap-6 mb-12">
             <div className="w-12 h-[1px] bg-brand-border" />
             <h3 className="section-label">
-              Trusted by high-performance clinics across the UK
+              Trusted by private medical and aesthetic clinics across the UK
             </h3>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-70">

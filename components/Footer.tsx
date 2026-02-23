@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({ onPlaceholderClick }) => {
               <Logo className="scale-[1.0] origin-left" />
             </div>
             <p className="text-brand-grey max-w-md text-lg leading-relaxed font-light">
-              Engineering high-performance revenue infrastructure and predictable patient acquisition systems for modern private clinics across the United Kingdom.
+              We install predictable patient acquisition and conversion systems for private medical, aesthetic, and specialist clinics. Revenue infrastructure, not just marketing.
             </p>
             <div className="mt-16 flex flex-col gap-6">
               <div className="flex items-center gap-4 text-[10px] md:text-xs text-brand-grey uppercase tracking-[0.4em] font-black">
@@ -56,7 +56,7 @@ const Footer: React.FC<FooterProps> = ({ onPlaceholderClick }) => {
         <div className="pt-16 border-t border-brand-border flex flex-col sm:flex-row justify-between items-center gap-10">
           <p className="text-[10px] text-brand-grey font-black text-center sm:text-left tracking-[0.4em] uppercase leading-loose">
             © 2025 SysAgen Lab Ltd. <br className="sm:hidden" />
-            <span className="text-brand-white">Strategic Revenue Infrastructure.</span>
+            <span className="text-brand-white">Revenue Infrastructure for Private Clinics.</span>
           </p>
           <div className="flex gap-12 text-brand-grey">
             <a href="https://www.instagram.com/sysagenlab/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-accent transition-all transform hover:scale-125">

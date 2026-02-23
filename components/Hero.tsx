@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
           >
             <div className="w-12 h-[1px] bg-brand-accent" />
             <span className="section-label tracking-[0.5em]">
-              Clinic Revenue Infrastructure
+              Revenue Infrastructure for Private Clinics
             </span>
           </motion.div>
 
@@ -41,9 +41,9 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] xl:text-[5.5rem] font-black tracking-[-0.04em] text-brand-white mb-8 leading-[0.92] uppercase"
           >
-            Predictable <br />
-            <span className="text-brand-accent">Growth.</span> <br />
-            Engineered.
+            Predictable Patient <br />
+            <span className="text-brand-accent">Revenue Systems</span> <br />
+            for Modern Clinics.
           </motion.h1>
 
           <motion.p
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
             className="text-base md:text-lg text-brand-grey max-w-xl mb-12 leading-relaxed font-light"
           >
-            We build high-performance marketing and AI automation systems exclusively for elite private clinics across the United Kingdom.
+            Most clinics don't have a lead problem. They have a system problem. We fix the infrastructure.
           </motion.p>
 
           <motion.div
@@ -62,13 +62,13 @@ const Hero: React.FC = () => {
             className="flex flex-col sm:flex-row items-start gap-8"
           >
             <a href="#contact" className="btn-editorial">
-              Book Audit
+              Book Revenue Audit
             </a>
             <a
               href="#infrastructure"
               className="group relative text-[11px] font-black text-brand-white uppercase tracking-[0.3em] py-4"
             >
-              Our Methodology
+              Our Approach
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-brand-accent transition-all duration-300 group-hover:w-full" />
             </a>
           </motion.div>
