@@ -38,10 +38,10 @@ const Testimonials: React.FC = () => {
         className="text-left mb-24"
       >
         <div className="flex items-center gap-4 mb-10">
-          <div className="w-10 h-[1px] bg-brand-black"></div>
-          <span className="text-[10px] font-black uppercase tracking-[0.5em] text-brand-grey">Client Outcomes</span>
+          <div className="w-10 h-[1px] bg-brand-accent"></div>
+          <span className="section-label">Client Outcomes</span>
         </div>
-        <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-brand-black mb-10 tracking-[-0.05em] leading-[0.85] uppercase">Verified Results</h2>
+        <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-brand-white mb-10 tracking-[-0.05em] leading-[0.85] uppercase">Verified Results</h2>
         <p className="text-brand-grey mt-6 font-light italic text-lg">Measurable impact across private medical and aesthetic practices.</p>
       </motion.div>
 
@@ -71,7 +71,7 @@ const Testimonials: React.FC = () => {
                   referrerPolicy="no-referrer"
                 />
                 <div>
-                  <h4 className="font-black text-brand-black text-xs uppercase tracking-tight">{review.name}</h4>
+                  <h4 className="font-black text-brand-white text-xs uppercase tracking-tight">{review.name}</h4>
                   <p className="text-[9px] text-brand-grey font-black uppercase tracking-[0.3em] mt-1">{review.handle}</p>
                 </div>
               </div>

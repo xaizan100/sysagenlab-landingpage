@@ -36,10 +36,10 @@ const ClinicTypes: React.FC = () => {
         className="text-left mb-24"
       >
         <div className="flex items-center gap-4 mb-10">
-          <div className="w-10 h-[1px] bg-brand-black"></div>
-          <span className="text-[10px] font-black uppercase tracking-[0.5em] text-brand-grey">Self-Selection</span>
+          <div className="w-10 h-[1px] bg-brand-accent"></div>
+          <span className="section-label">Self-Selection</span>
         </div>
-        <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-brand-black mb-10 tracking-[-0.05em] leading-[0.85] uppercase">
+        <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-brand-white mb-10 tracking-[-0.05em] leading-[0.85] uppercase">
           The Three Stages of <br /> Clinic Growth.
         </h2>
         <p className="text-brand-grey text-lg md:text-xl max-w-3xl font-light leading-relaxed">
@@ -57,7 +57,7 @@ const ClinicTypes: React.FC = () => {
             transition={{ delay: idx * 0.1, duration: 0.8 }}
             className="editorial-card p-10 md:p-12 flex flex-col h-full"
           >
-            <h3 className="text-xl font-black mb-16 tracking-tight text-brand-black uppercase leading-tight">
+            <h3 className="text-xl font-black mb-16 tracking-tight text-brand-white uppercase leading-tight">
               {type.title}
             </h3>
             
@@ -69,11 +69,11 @@ const ClinicTypes: React.FC = () => {
               
               <div>
                 <p className="text-[9px] text-brand-grey font-black uppercase tracking-[0.5em] mb-6">The Real Issue</p>
-                <p className="text-brand-black text-sm leading-relaxed font-black uppercase tracking-tight">{type.realIssue}</p>
+                <p className="text-brand-white text-sm leading-relaxed font-black uppercase tracking-tight">{type.realIssue}</p>
               </div>
               
               <div className="pt-12 border-t border-brand-border">
-                <p className="text-[9px] font-black uppercase tracking-[0.5em] mb-6 text-brand-black">The Actual Fix</p>
+                <p className="text-[9px] font-black uppercase tracking-[0.5em] mb-6 text-brand-accent">The Actual Fix</p>
                 <p className="text-brand-grey text-sm leading-relaxed font-light italic">{type.fix}</p>
               </div>
             </div>

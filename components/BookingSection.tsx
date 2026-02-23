@@ -71,13 +71,13 @@ const BookingSection: React.FC = () => {
       config: { 
         layout: "month_view", 
         useSlotsViewOnSmallScreen: true,
-        theme: "light" 
+        theme: "dark" 
       },
       calLink: "sysagenlab/30min",
     });
 
     window.Cal.ns["30min"]("ui", { 
-      styles: { branding: { brandColor: "#111111" } },
+      styles: { branding: { brandColor: "#c9a227" } },
       hideEventTypeDetails: false, 
       layout: "month_view" 
     });
@@ -94,7 +94,7 @@ const BookingSection: React.FC = () => {
       >
         <div className="flex flex-col lg:flex-row">
           {/* Left Side: Personal Conversion Copy */}
-          <div className="lg:w-1/3 p-10 md:p-16 lg:p-20 bg-brand-white border-b lg:border-b-0 lg:border-r border-brand-border">
+          <div className="lg:w-1/3 p-10 md:p-16 lg:p-20 bg-brand-surface border-b lg:border-b-0 lg:border-r border-brand-border">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -102,12 +102,12 @@ const BookingSection: React.FC = () => {
               className="mb-12"
             >
               <div className="flex items-center gap-4 mb-10">
-                <div className="w-10 h-[1px] bg-brand-black"></div>
-                <span className="text-[10px] font-black uppercase tracking-[0.5em] text-brand-grey">Strategic Audit</span>
+                <div className="w-10 h-[1px] bg-brand-accent"></div>
+                <span className="section-label">Strategic Audit</span>
               </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-brand-black tracking-[-0.05em] leading-[0.85] uppercase">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-brand-white tracking-[-0.05em] leading-[0.85] uppercase">
                 Book Your <br />
-                <span className="text-brand-grey">Revenue Audit.</span>
+                <span className="text-brand-accent">Revenue Audit.</span>
               </h2>
             </motion.div>
             
@@ -123,9 +123,9 @@ const BookingSection: React.FC = () => {
                 transition={{ delay: 0.1, duration: 0.8 }}
                 className="flex items-start gap-6"
               >
-                <div className="text-[10px] font-black text-brand-black mt-1">01</div>
+                <div className="text-[10px] font-black text-brand-accent mt-1">01</div>
                 <div>
-                  <h4 className="text-brand-black font-black text-sm uppercase tracking-tight">Diagnostic Assessment</h4>
+                  <h4 className="text-brand-white font-black text-sm uppercase tracking-tight">Diagnostic Assessment</h4>
                   <p className="text-brand-grey text-xs mt-3 font-light leading-relaxed">If we cannot create a measurable, significant impact for your clinic, we will say so immediately.</p>
                 </div>
               </motion.div>
@@ -137,9 +137,9 @@ const BookingSection: React.FC = () => {
                 transition={{ delay: 0.2, duration: 0.8 }}
                 className="flex items-start gap-6"
               >
-                <div className="text-[10px] font-black text-brand-black mt-1">02</div>
+                <div className="text-[10px] font-black text-brand-accent mt-1">02</div>
                 <div>
-                  <h4 className="text-brand-black font-black text-sm uppercase tracking-tight">Growth Engineering</h4>
+                  <h4 className="text-brand-white font-black text-sm uppercase tracking-tight">Growth Engineering</h4>
                   <p className="text-brand-grey text-xs mt-3 font-light leading-relaxed">Growth should be engineered — not left to chance. Leave the call with a clear blueprint for your revenue infrastructure.</p>
                 </div>
               </motion.div>
@@ -152,7 +152,7 @@ const BookingSection: React.FC = () => {
                 className="pt-16 border-t border-brand-border"
               >
                 <p className="text-[9px] text-brand-grey font-black uppercase tracking-[0.5em] mb-6">Direct Support</p>
-                <a href="mailto:Hello@sysagenlab.co.uk" className="text-brand-black font-black hover:text-brand-grey transition-colors flex items-center gap-4 group text-sm uppercase tracking-[0.2em]">
+                <a href="mailto:Hello@sysagenlab.co.uk" className="text-brand-accent font-black hover:text-brand-white transition-colors flex items-center gap-4 group text-sm uppercase tracking-[0.2em]">
                   <Mail className="w-4 h-4" />
                   Hello@sysagenlab.co.uk
                 </a>
@@ -161,10 +161,10 @@ const BookingSection: React.FC = () => {
           </div>
 
           {/* Right Side: Cal.com Embed */}
-          <div className="lg:w-2/3 min-h-[500px] md:min-h-[600px] relative bg-brand-offwhite">
+          <div className="lg:w-2/3 min-h-[500px] md:min-h-[600px] relative bg-brand-muted">
             {!isVisible && (
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-10 h-10 border-2 border-brand-border border-t-brand-black rounded-full animate-spin"></div>
+                <div className="w-10 h-10 border-2 border-brand-border border-t-brand-accent rounded-full animate-spin"></div>
               </div>
             )}
             <div 

@@ -17,10 +17,10 @@ const FinancialFraming: React.FC = () => {
           <div>
             <div className="text-left mb-16">
               <div className="flex items-center gap-4 mb-10">
-                <div className="w-10 h-[1px] bg-brand-black"></div>
+                <div className="w-10 h-[1px] bg-brand-accent"></div>
                 <span className="text-[10px] font-black uppercase tracking-[0.5em] text-brand-grey">The Mathematics of Growth</span>
               </div>
-              <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-brand-black mb-10 tracking-[-0.05em] leading-[0.85] uppercase">
+              <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-brand-white mb-10 tracking-[-0.05em] leading-[0.85] uppercase">
                 Small Shifts. <br />
                 <span className="text-brand-grey">Significant Impact.</span>
               </h2>
@@ -43,9 +43,9 @@ const FinancialFraming: React.FC = () => {
                   transition={{ delay: i * 0.1, duration: 0.8 }}
                   className="flex gap-10"
                 >
-                  <div className="text-[10px] font-black text-brand-black mt-1">0{i + 1}</div>
+                  <div className="text-[10px] font-black text-brand-white mt-1">0{i + 1}</div>
                   <div>
-                    <h4 className="text-brand-black font-black text-lg mb-4 uppercase tracking-tight">{item.title}</h4>
+                    <h4 className="text-brand-white font-black text-lg mb-4 uppercase tracking-tight">{item.title}</h4>
                     <p className="text-brand-grey text-sm leading-relaxed font-light">{item.desc}</p>
                   </div>
                 </motion.div>
@@ -58,10 +58,10 @@ const FinancialFraming: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="bg-brand-offwhite p-12 md:p-20 border border-brand-border text-center"
+            className="bg-brand-muted p-12 md:p-20 border border-brand-border text-center"
           >
             <p className="text-brand-grey text-[9px] font-black uppercase tracking-[0.5em] mb-10">Revenue Impact Projection</p>
-            <div className="text-[80px] md:text-[120px] font-black text-brand-black mb-6 tracking-[-0.08em] leading-none">£120k+</div>
+            <div className="text-[80px] md:text-[120px] font-black text-brand-accent mb-6 tracking-[-0.08em] leading-none">£120k+</div>
             <p className="text-brand-grey text-[10px] font-black uppercase tracking-[0.4em] mb-20">Additional Annual Revenue</p>
             
             <div className="space-y-8 mb-20">
@@ -72,7 +72,7 @@ const FinancialFraming: React.FC = () => {
               ].map((stat, idx) => (
                 <div key={idx} className="flex justify-between items-center py-6 border-b border-brand-border">
                   <span className="text-brand-grey text-[9px] uppercase tracking-[0.3em] font-black">{stat.label}</span>
-                  <span className="text-brand-black font-black text-2xl tracking-tighter">{stat.value}</span>
+                  <span className="text-brand-white font-black text-2xl tracking-tighter">{stat.value}</span>
                 </div>
               ))}
             </div>
